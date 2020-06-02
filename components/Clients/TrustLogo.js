@@ -42,7 +42,7 @@ class TrustLogo extends Component {
         return (
             <section className="blog-area blog-section ptb-100">
                 <div className="container">
-                    <div className="section-title">
+                    <div className="section-title" style={{marginBottom:30}}>
                         <h2>Trusted by businesses around the world</h2>
                         <div className="bar"></div>
                         <p>Business close and far, and big and small</p>
