@@ -23,34 +23,18 @@ class TeamOne extends Component {
         props.onInitCheckout(data);
     };
 
-    componentWillMount(){
-        console.log("mnice");
-        if (!!localStorage.getItem('orderData')){            
-            var sendData = JSON.parse(localStorage.getItem('orderData'));
-            if (localStorage.getItem('paymentType') == 'payfast'){
-                console.log(sendData);
-                axios.post(config.ADD_ORDER, sendData)
-                    .then(response => {
-                        onInitData();
-                        localStorage.removeItem('orderData');
-                        localStorage.removeItem('paymentType');
-                    })
-                    .catch(function (error) {
-                    });
-            }            
-        }        
-    }
-
     componentDidMount() {
 
         console.log("mnice");
-        if (!!localStorage.getItem('orderData')){            
+        var local_order = localStorage.getItem('orderData');
+        if (local_order){            
             var sendData = JSON.parse(localStorage.getItem('orderData'));
             if (localStorage.getItem('paymentType') == 'payfast'){
                 console.log(sendData);
                 axios.post(config.ADD_ORDER, sendData)
                     .then(response => {
                         onInitData();
+                        console.log("ok");
                         localStorage.removeItem('orderData');
                         localStorage.removeItem('paymentType');
                     })
