@@ -3,7 +3,7 @@ import Link from "next/link";
 import Navbar from '../components/Layouts/Navbar';
 import Footer from '../components/Layouts/Footer';
 import axios from "axios";
-import config from "../config/config";
+import config from "../config/config.json";
 
 class TeamOne extends Component {
 
@@ -23,7 +23,41 @@ class TeamOne extends Component {
         props.onInitCheckout(data);
     };
 
+    componentWillMount(){
+        console.log("mnice");
+        if (!!localStorage.getItem('orderData')){            
+            var sendData = JSON.parse(localStorage.getItem('orderData'));
+            if (localStorage.getItem('paymentType') == 'payfast'){
+                console.log(sendData);
+                axios.post(config.ADD_ORDER, sendData)
+                    .then(response => {
+                        onInitData();
+                        localStorage.removeItem('orderData');
+                        localStorage.removeItem('paymentType');
+                    })
+                    .catch(function (error) {
+                    });
+            }            
+        }        
+    }
+
     componentDidMount() {
+
+        console.log("mnice");
+        if (!!localStorage.getItem('orderData')){            
+            var sendData = JSON.parse(localStorage.getItem('orderData'));
+            if (localStorage.getItem('paymentType') == 'payfast'){
+                console.log(sendData);
+                axios.post(config.ADD_ORDER, sendData)
+                    .then(response => {
+                        onInitData();
+                        localStorage.removeItem('orderData');
+                        localStorage.removeItem('paymentType');
+                    })
+                    .catch(function (error) {
+                    });
+            }            
+        }  
         let savedData = localStorage.getItem('payment_data');
         let realData = {};
         if (savedData) {

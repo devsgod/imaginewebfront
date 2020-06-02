@@ -90,7 +90,6 @@ function CheckoutBody(props) {
         document.body.appendChild(form);
 
         form.submit();
-        onSaveData();
         document.body.removeChild(form);
     };
 
@@ -110,6 +109,8 @@ function CheckoutBody(props) {
             cartData,
             orderDetail
         };
+
+        localStorage.setItem('orderData', JSON.stringify(sendData));
 
         let {firstName, lastName, email, phone} = props.buyerInfo;
         
