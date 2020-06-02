@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+sitemap:https://teest.imaginesignage.com/sitemap.xml
