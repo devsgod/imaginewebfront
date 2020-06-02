@@ -24,10 +24,7 @@ class TeamOne extends Component {
     };
 
     componentDidMount() {
-
-        console.log("mnice");
-        var local_order = localStorage.getItem('orderData');
-        if (local_order){            
+        if (localStorage.getItem('orderData')){            
             var sendData = JSON.parse(localStorage.getItem('orderData'));
             if (localStorage.getItem('paymentType') == 'payfast'){
                 console.log(sendData);
