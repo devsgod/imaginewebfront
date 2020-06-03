@@ -20,6 +20,8 @@ class TeamOne extends Component {
             cartData : {}
         };
 
+        console.log("Nice");
+
         props.onInitCartCount(0);
         props.onInitCheckout(data);
     };
@@ -41,7 +43,7 @@ class TeamOne extends Component {
                             console.log("ok",response);
                             localStorage.removeItem('orderData');
                             localStorage.removeItem('paymentType');
-                            onInitData();
+                            this.onInitData();                            
                         })
                         .catch(function (error) {
                         });
