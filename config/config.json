@@ -13,6 +13,7 @@
     "DELETE_PRODUCT": "http://cms.imaginesignage.com/products/delete/",
 
     "ADD_ORDER" : "http://cms.imaginesignage.com/orders/add/",
+    "GET_ORDERID" : "http://cms.imaginesignage.com/orders/orderid/",
 
     "ALL_BLOGS": "http://cms.imaginesignage.com/blogs/",
     "ADD_BLOG": "http://cms.imaginesignage.com/blogs/add/",

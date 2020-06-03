@@ -3,7 +3,8 @@ import Link from "next/link";
 import Navbar from '../components/Layouts/Navbar';
 import Footer from '../components/Layouts/Footer';
 import axios from "axios";
-import config from "../config/config.json";
+// import config from "../config/config.json";
+import config from "../config/config_local.json";
 
 class TeamOne extends Component {
 
@@ -24,21 +25,26 @@ class TeamOne extends Component {
     };
 
     componentDidMount() {
-        if (localStorage.getItem('orderData')){            
-            var sendData = JSON.parse(localStorage.getItem('orderData'));
-            if (localStorage.getItem('paymentType') == 'payfast'){
-                console.log(sendData);
-                axios.post(config.ADD_ORDER, sendData)
-                    .then(response => {
-                        onInitData();
-                        console.log("ok");
-                        localStorage.removeItem('orderData');
-                        localStorage.removeItem('paymentType');
-                    })
-                    .catch(function (error) {
-                    });
-            }            
-        }  
+        const link_route = window.location.href;
+        var url = new URL(link_route);
+        var orderid = url.searchParams.get("orderid");
+
+        if (!!orderid)
+            if (localStorage.getItem('orderData')){            
+                var sendData = JSON.parse(localStorage.getItem('orderData'));
+                sendData.orderid = orderid;
+                if (localStorage.getItem('paymentType') == 'payfast'){
+                    axios.post(config.ADD_ORDER, sendData)
+                        .then(response => {
+                            onInitData();
+                            console.log("ok",response);
+                            // localStorage.removeItem('orderData');
+                            // localStorage.removeItem('paymentType');
+                        })
+                        .catch(function (error) {
+                        });
+                }
+            }
         let savedData = localStorage.getItem('payment_data');
         let realData = {};
         if (savedData) {
@@ -47,7 +53,8 @@ class TeamOne extends Component {
 
             axios.post(config.ADD_ORDER, realData)
                 .then(response => {
-                    this.onInitData();
+                        console.log("nice",response);
+                        this.onInitData();
                 })
                 .catch(function (error) {
                 });

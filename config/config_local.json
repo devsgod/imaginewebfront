@@ -13,6 +13,7 @@
     "DELETE_PRODUCT": "http://localhost:4000/products/delete",
 
     "ADD_ORDER" : "http://localhost:4000/orders/add",
+    "GET_ORDERID" : "http://localhost:4000/orders/orderid/",
 
     "ALL_BLOGS": "http://localhost:4000/blogs/",
     "ADD_BLOG": "http://localhost:4000/blogs/add",

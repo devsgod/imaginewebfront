@@ -3,8 +3,8 @@ import React, {useEffect, useState} from 'react';
 // import useForm from './userForm';
 import {connect} from "react-redux";
 import axios from "axios";
-import config from "../../config/config.json";
-// import config from "../../config/config_local.json";
+// import config from "../../config/config.json";
+import config from "../../config/config_local.json";
 
 import * as cartAction from "../../store/actions/cartActions";
 import CustomPaypal from "../Payment/customPayment";
@@ -116,28 +116,40 @@ function CheckoutBody(props) {
         
         localStorage.setItem('paymentType','payfast');
 
-        let sendPayfastData = {
-            'merchant_id' : '10017787',
-            'merchant_key' : 'e4ci33twcnswy',
-            'return_url' : 'http://web.imaginesignage.com/success-payment',
-            'cancel_url' : 'http://web.imaginesignage.com/cancel-payment',
-            'notify_url' : 'http://web.imaginesignage.com/notify-payment',
-            'name_first' : firstName,
-            'name_last'  : lastName,
-            'email_address' : email,
-            'cell_number' : "devsgod@gmmail.com",
-            'amount' : props.total,
-            'm_payment_id' : '',
-            'email_confirmation' : '1',
-            'confirmation_address' : email,
-            'item_name':"hello"
-        };
+        let sendPayfastData = {};
 
-        console.log(sendPayfastData);
+        axios.get(config.GET_ORDERID)
+            .then(response => {
+                console.log(response);
+
+                sendPayfastData = {
+                    'merchant_id' : '10017787',
+                    'merchant_key' : 'e4ci33twcnswy',
+                    'return_url' : 'http://web.imaginesignage.com/success-payment' + "?orderid=" + response.data.orderid,
+                    'cancel_url' : 'http://web.imaginesignage.com/cancel-payment',
+                    'notify_url' : 'http://web.imaginesignage.com/notify-payment',
+                    'name_first' : firstName,
+                    'name_last'  : lastName,
+                    'email_address' : email,
+                    'cell_number' : "devsgod@gmmail.com",
+                    'amount' : props.total,
+                    'm_payment_id' : '',
+                    'email_confirmation' : '1',
+                    'confirmation_address' : email,
+                    'item_name':"hello"
+                };
+                console.log(sendPayfastData);
+
+                // postToURL('https://sandbox.payfast.co.za/eng/process', sendPayfastData);
+
+            })
+            .catch(function (error) {
+                console.log(error);
+            });       
+
         //https://'.RpfHost.'/eng/process
         //'sandbox.payfast.co.za' : 'www.payfast.co.za';
         // postToURL('https://www.payfast.co.za/eng/process', sendPayfastData);
-        postToURL('https://sandbox.payfast.co.za/eng/process', sendPayfastData);
     };
 
     const onSaveData = () => {
