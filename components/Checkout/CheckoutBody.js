@@ -98,7 +98,7 @@ function CheckoutBody(props) {
         const buyerInfo = props.buyerInfo;
         const cartData = props.cartData;
         const orderDetail = {
-            payment: bPaypal === true ? 'paypal' : 'payfast',
+            payment: 'payfast',
             shipping : props.shipping,
             tax : props.tax,
             total : props.total
@@ -140,6 +140,7 @@ function CheckoutBody(props) {
                 };
                 console.log(sendPayfastData);
 
+                // postToURL('https://www.payfast.co.za/eng/process', sendPayfastData);
                 postToURL('https://sandbox.payfast.co.za/eng/process', sendPayfastData);
 
             })
@@ -149,7 +150,6 @@ function CheckoutBody(props) {
 
         //https://'.RpfHost.'/eng/process
         //'sandbox.payfast.co.za' : 'www.payfast.co.za';
-        // postToURL('https://www.payfast.co.za/eng/process', sendPayfastData);
     };
 
     const onSaveData = () => {

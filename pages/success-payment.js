@@ -38,29 +38,14 @@ class TeamOne extends Component {
                         .then(response => {
                             onInitData();
                             console.log("ok",response);
-                            // localStorage.removeItem('orderData');
-                            // localStorage.removeItem('paymentType');
+                            localStorage.removeItem('orderData');
+                            localStorage.removeItem('paymentType');
                         })
                         .catch(function (error) {
                         });
                 }
             }
-        let savedData = localStorage.getItem('payment_data');
-        let realData = {};
-        if (savedData) {
-            localStorage.removeItem('payment_data');
-            realData = JSON.parse(savedData);
-
-            axios.post(config.ADD_ORDER, realData)
-                .then(response => {
-                        console.log("nice",response);
-                        this.onInitData();
-                })
-                .catch(function (error) {
-                });
-        }
     }
-
 
     render() {
         return (

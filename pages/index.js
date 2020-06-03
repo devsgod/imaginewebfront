@@ -17,7 +17,8 @@ import Cards from "../components/Cards/cards";
 
 class Index extends React.Component {
     componentDidMount() {
-        localStorage.removeItem('payment_data');
+        localStorage.removeItem('orderData');
+        localStorage.removeItem('paymentType');
     }
 
     render() {

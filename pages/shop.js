@@ -9,7 +9,8 @@ import ShopVOneA from '../components/Shop/ShopVOneA';
 class ShopOne extends Component {
 
     componentDidMount() {
-        localStorage.removeItem('payment_data');
+        localStorage.removeItem('orderData');
+        localStorage.removeItem('paymentType');
     }
 
     render() {

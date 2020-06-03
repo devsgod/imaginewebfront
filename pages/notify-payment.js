@@ -11,7 +11,8 @@ import {connect} from "react-redux";
 class NotifyPayment extends Component {
 
     componentDidMount() {
-        localStorage.removeItem('payment_data');
+        localStorage.removeItem('orderData');
+        localStorage.removeItem('paymentType');
     }
 
     render() {
