@@ -175,7 +175,7 @@ class Form extends Component {
 
                                     <div className="col-lg-12" style={{ margin: 40 }}>
                                         <ReCAPTCHA
-                                            sitekey="6LfLr-EUAAAAANxJc-VGHncZS1a0e7J3jhDAm32T"
+                                            sitekey="6Lem4_8UAAAAAFPhVABX1BVspSkTmL-QyM-3HVnn"
                                             onChange={this.onCaptchaChange}
                                         />
                                     </div>
