@@ -3,8 +3,8 @@ import React, {useEffect, useState} from 'react';
 // import useForm from './userForm';
 import {connect} from "react-redux";
 import axios from "axios";
-// import config from "../../config/config.json";
-import config from "../../config/config_local.json";
+import config from "../../config/config.json";
+// import config from "../../config/config_local.json";
 
 import * as cartAction from "../../store/actions/cartActions";
 import CustomPaypal from "../Payment/customPayment";

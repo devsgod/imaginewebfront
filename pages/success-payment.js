@@ -3,8 +3,8 @@ import Link from "next/link";
 import Navbar from '../components/Layouts/Navbar';
 import Footer from '../components/Layouts/Footer';
 import axios from "axios";
-// import config from "../config/config.json";
-import config from "../config/config_local.json";
+import config from "../config/config.json";
+// import config from "../config/config_local.json";
 
 class TeamOne extends Component {
 
