@@ -31,19 +31,17 @@ class TeamOne extends Component {
 
         if (!!orderid)
             if (localStorage.getItem('orderData')){          
-                
-                
+                                
                 var sendData = JSON.parse(localStorage.getItem('orderData'));
                 var paymentType = localStorage.getItem('paymentType');
-                localStorage.removeItem('orderData');
-                localStorage.removeItem('paymentType');
                 sendData.orderid = orderid;
-                
                 if (paymentType == 'payfast'){
                     axios.post(config.ADD_ORDER, sendData)
                         .then(response => {
-                            onInitData();
                             console.log("ok",response);
+                            localStorage.removeItem('orderData');
+                            localStorage.removeItem('paymentType');
+                            onInitData();
                         })
                         .catch(function (error) {
                         });
