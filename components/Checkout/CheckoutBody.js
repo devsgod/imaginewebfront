@@ -140,7 +140,7 @@ function CheckoutBody(props) {
                 };
                 console.log(sendPayfastData);
 
-                // postToURL('https://sandbox.payfast.co.za/eng/process', sendPayfastData);
+                postToURL('https://sandbox.payfast.co.za/eng/process', sendPayfastData);
 
             })
             .catch(function (error) {
