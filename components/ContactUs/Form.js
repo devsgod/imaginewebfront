@@ -31,28 +31,30 @@ class Form extends Component {
     };
 
     onSubmit = e => {
-        e.preventDefault();
+        let { captcha } = this.state;
+        if (captcha){
+            e.preventDefault();
 
-        const { name, email, phone, subject, message } = this.state;
-
-        const data = {
-            name,
-            email,
-            phone,
-            subject,
-            message
-        };
-
-        axios.post(config.CONTACT_FORM, data)
-            .then(res => {
-                console.log(res);
-            })
-            .catch(function (error) {
-            });
+            const { name, email, phone, subject, message } = this.state;
+    
+            const data = {
+                name,
+                email,
+                phone,
+                subject,
+                message
+            };
+    
+            axios.post(config.CONTACT_FORM, data)
+                .then(res => {
+                    console.log(res);
+                })
+                .catch(function (error) {
+                });
+        }        
     };
 
     onCaptchaChange = e => {
-
         if (!!e) {
             this.setState({ captcha: true });
         }
@@ -175,7 +177,7 @@ class Form extends Component {
 
                                     <div className="col-lg-12" style={{ margin: 40 }}>
                                         <ReCAPTCHA
-                                            sitekey="6Lem4_8UAAAAAFPhVABX1BVspSkTmL-QyM-3HVnn"
+                                            sitekey="6LeU-f8UAAAAAH_vgN4JD8TFYf81nK-fpPg0SOCB"
                                             onChange={this.onCaptchaChange}
                                         />
                                     </div>
