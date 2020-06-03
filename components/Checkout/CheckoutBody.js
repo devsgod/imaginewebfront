@@ -204,7 +204,7 @@ function CheckoutBody(props) {
 
     const onCheck = () => {
         let bOk = true;
-        if (props.buyerInfo.country == ''){
+        if (props.buyerInfo.country === ''){
             setcountryErr('Please insert value');
             bOk = false;
         }
@@ -292,7 +292,6 @@ function CheckoutBody(props) {
 
                                         <div className="select-box">
                                             <Select
-                                                value={props.buyerInfo.country}
                                                 options={countryList().getData()}
                                                 onChange={(event) => {
                                                     console.log("value", event.value);
@@ -303,6 +302,7 @@ function CheckoutBody(props) {
                                                         setcountryErr('');
                                                     }
                                                     props.cartAction.changeCountry(event.value)
+                                                    console.log(props.buyerInfo)
                                                 }}
                                                     >                                                
                                             </Select>
