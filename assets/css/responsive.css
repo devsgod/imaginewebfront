@@ -2019,7 +2019,7 @@
     padding: 10px 0;
   }
   .crake-nav nav .navbar-nav li {
-    padding: 5px 0 !important;
+    padding: 5px 15px !important;
   }
   .crake-nav nav .navbar-nav li a {
     font-size: 15px;
@@ -2059,9 +2059,7 @@
 }
 
 @media only screen and (max-width: 575px) {
-  .crake-nav {
-    top: 80px;
-  }
+
 
   .topbar .row{
     text-align: center;
