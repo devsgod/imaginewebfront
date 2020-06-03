@@ -22,7 +22,7 @@ const Dash = () => {
                 
                 <Col md={12} lg={7} >
                 <div style={{ display:"flex",justifyContent:"start",alignItems:"center",paddingBottom:20}} className="settitle">
-                <h2 >Simple plug and play with <br/> Imagine & LG
+                <h2 >Simple plug and play with Imagine & LG
 
 
 </h2>
@@ -148,11 +148,11 @@ const Dash = () => {
 <img src={rest} alt="notfound" style={{width:"80%"}}></img>
 
 </Row>
-<Row style={{justifyContent:"center",marginTop:50}} className="settitle"> 
+<Row style={{justifyContent:"center"}} className="settitle"> 
 
 <h2>Sync Your Content</h2>
 <div style={{width:"100%",display:"flex",justifyContent:"center",margin:20}}>
-<p style={{display:"block",width:"70%",textAlign:"center",color:"black"}}>Create mouth watering digital menu boards utilizing the custom built Imagine LG sync feature. Simply install 2 or more screens and schedule your content to flow from one screen into other or display one message across all screens. Imagine that!
+<p style={{display:"block",width:"90%",textAlign:"center",color:"black"}}>Create mouth watering digital menu boards utilizing the custom built Imagine LG sync feature. Simply install 2 or more screens and schedule your content to flow from one screen into other or display one message across all screens. Imagine that!
 
 </p>
 
@@ -164,7 +164,7 @@ const Dash = () => {
                          </Button>
                             </Link>
 </Row>
-<div className="container flexcontainer" style={{marginTop:150,marginBottom:150}}>
+<div className="container flexcontainer" style={{marginTop:50,marginBottom:50}}>
    
      
    <Paper elevation={3} className="flexcontainer">

@@ -4,20 +4,20 @@ import Link from 'next/link';
 class GetStarted extends React.Component {
     render() {
         return (
-            <section className="features-area saas-features ptb-100 pt-0">
+            <section className="features-area saas-features ptb-100 pb-5">
                 <div className="container">
                     <div className="section-title">
                         <h2>Get started now</h2>
                         <div className="bar"></div>
                         <p>We’ve made it fast, easy to manage, simple to setup and a breeze to get your<br/>content from your PC to multiple screens anywhere in the world</p>
+                        <p className="text-center">Have any questions? Get in touch, we would love to hear from you</p>
                     </div>
 
                     <div className="row justify-content-center">
                         <Link href="/licence"><a className="btn btn-primary">SEE PRICING</a></Link>&nbsp;&nbsp;&nbsp;
                         <Link href="/signup"><a className="btn btn-primary">Try it for free</a></Link>
                     </div>
-                    <br />
-                    <p className="text-center">Have any questions? Get in touch, we would love to hear from you</p>
+                    
                 </div>
             </section>
         );

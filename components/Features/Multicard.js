@@ -71,7 +71,7 @@ render(){
                                 ))
                             }
                         </div>
-                            {!this.props.button?(null):(  <div className="row justify-content-center">
+                            {!this.props.button?(null):(  <div className="row justify-content-center mb-5">
                             <button onClick={ (e) => this.loadMoreFeatures() } className="btn btn-primary">View more</button>
                         </div>)}                      
                     </div>

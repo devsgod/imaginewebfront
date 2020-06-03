@@ -31,7 +31,7 @@ class CaseStudy extends Component {
 
     render() {
         return (
-            <section className="blog-area blog-section ptb-100 case-study">
+            <section className="blog-area blog-section pb-5 pt-5 case-study">
                 <div className="container">
                     <div className="section-title">
                         <h2>Imagine Digital Signage Case Studies</h2>

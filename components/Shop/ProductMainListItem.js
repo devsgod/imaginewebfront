@@ -17,14 +17,14 @@ class ProductMainListItem extends React.Component{
                 </div>
                 <div className="product-content col-lg-7 py-3">
                     <div className='row'>
-                        <div className='col-8'>
+                        <div className='col-12'>
                             <h3 style={{marginBottom : 0}}>
                                 <Link href="#" >
                                     <div style={{fontSize:'25px'}}> {this.props.productName}</div>
                                 </Link>
                             </h3>
                         </div>
-                        <div className='col-4'>
+                        <div className='col-12'>
                             <Rating
                                 style={{zIndex:'0'}}
                                 name='rate1'

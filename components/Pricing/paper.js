@@ -8,7 +8,7 @@ export default function SimplePaper() {
 
 
   return (
-      <div className="container flexcontainer" style={{marginTop:150,marginBottom:150}}>
+      <div className="container flexcontainer" style={{marginTop:100,marginBottom:100}}>
    
      
      <Paper elevation={3} className="flexcontainer">

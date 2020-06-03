@@ -237,7 +237,7 @@ class CoreFeatures extends React.Component {
         return (
             <section className="features-area saas-features ptb-100">
                 <div className="container">
-                    <div className="section-title">
+                    <div className="section-title mt-5">
                         <h2>{data[this.props.slug]["title"]}</h2>
                         <div className="bar"></div>
                     </div>

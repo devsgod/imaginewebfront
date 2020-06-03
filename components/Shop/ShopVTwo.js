@@ -419,14 +419,14 @@ class ShopVTwo extends Component {
                                 <div className="row">
                                     <div className="col-lg-12 col-md-12">
                                         <div className="row justify-content-between align-items-center shop-head-line" style={{paddingBottom:'40px'}}>
-                                            <div className="col-lg-3 col-md-12 col-sm-12 col-xs-12 justify-content-start">
+                                            <div className="col-lg-3 col-md-12 col-sm-12 col-xs-12 mb-2 mt-2 justify-content-start">
                                                 <label style={{marginBottom:'0'}}>Showing {this.state.showStartValue} - {this.state.showEndValue} of {this.state.productCount} Results</label>
                                             </div>
-                                            <div className="col-lg-5 col-md-12 col-sm-12 col-xs-12 align-items-center justify-content-start" style={{display:'flex'}}>
-                                                <label style={{fontWeight:'bold', marginBottom:'0'}}>Sort by</label>
+                                            <div className="col-lg-5 col-md-12 col-sm-12 col-xs-12 mb-2 mt-2 align-items-center justify-content-start" style={{display:'flex'}}>
+                                                <label style={{fontWeight:'bold'}}>Sort by</label>
                                                 <FilterSelect onChange={this.onSelectSort}/>
                                             </div>
-                                            <div className="col-lg-4 col-md-12 col-sm-12 col-xs-12 align-items-center justify-content-start" style={{display:'flex'}}>
+                                            <div className="col-lg-4 col-md-12 col-sm-12 col-xs-12 mb-2 mt-2 align-items-center justify-content-start" style={{display:'flex'}}>
                                                 <label style={{fontWeight:'bold', marginBottom:'0'}}>Currency;</label>
                                                 <FilterCurrencySelect onChange={this.onSeletCurrency}/>
                                             </div>
@@ -494,7 +494,7 @@ class ShopVTwo extends Component {
                                         <div className='col-8'>
                                             <h3 style={{marginBottom : 0}}>
                                                 <Link href="#">
-                                                    <a>{this.state.productInfo.productName}</a>
+                                                    <a style={{fontSize : 25}}>{this.state.productInfo.productName}</a>
                                                 </Link>
                                             </h3>
                                         </div>

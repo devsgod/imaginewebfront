@@ -51,7 +51,7 @@ class TrustLogo extends Component {
                     <div className="row">
                         {
                             this.state.clients_to_show.map( client => (
-                                <div className="col-lg-3 col-md-4" key= {client._id} style={{marginBottom:30}}>
+                                <div className="col-lg-3 col-md-4 col-sm-6 client-logo" key= {client._id}>
                                     <div className="single-trust-logo">
                                         <img data-src={config.SERVER_BASE_URL + client.imageurl} alt="logo" className="lazyload" />
                                     </div>

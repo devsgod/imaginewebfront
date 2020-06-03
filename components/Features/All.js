@@ -68,12 +68,12 @@ export default function All() {
             ></Ex>
         </div>
 
-        <Row className="features-area flexcontainer" style={{backgroundColor:"white",flexWrap:"nowrap",marginBottom:50}}>
+        <Row className="features-area flexcontainer" style={{backgroundColor:"white",flexWrap:"nowrap",marginBottom:50, marginLeft:0, marginRight:0}}>
             <Multi from={0} to={1} button={false}></Multi>
         </Row>
 
         <div className="container">
-            <Row className="directionrows" style={{flexWrap:"nowrap", padding:50 }}>
+            <Row className="directionrows" style={{flexWrap:"nowrap", padding:30 }}>
                 <Col md={12} lg={6} >
                     <div  className="settitle" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                         <h2>Manage your content library and folders</h2>
@@ -147,7 +147,7 @@ export default function All() {
                 ></Ex>
             </div>
 
-            <Row className="features-area flexcontainer" style={{backgroundColor:"white"}}>
+            <Row className="features-area flexcontainer" style={{backgroundColor:"white",  marginLeft:0, marginRight:0}}>
                 <Multi from={4} to={2} button={false}></Multi>
             </Row>
         </div>

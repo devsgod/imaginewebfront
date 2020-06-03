@@ -360,7 +360,7 @@ font-size: 1.5rem;
 }
 .excol2{
     place-content: center;
-    margin-top: 50px;
+    margin: auto;
 }
 
 @media (max-width:768px){
@@ -371,7 +371,7 @@ font-size: 1.5rem;
   }
   .excol2{
       place-content: center;
-      margin-top: 20px;
+      margin: auto
   }
 }
 
@@ -568,18 +568,11 @@ font-weight: 400;
     margin-left: 10px;
      
     }
-.featureres{
-padding-right: 50px;
-
-background-size: inherit !important;
-
-}
 .cardmb{
   margin-bottom: 0px;
 }
 .ourmb{
-  margin-bottom: 30px;
-  margin-right: 30px;
+  margin: 20px;
   display: grid;
 }
   }
@@ -911,7 +904,7 @@ height: 350px !important;
 }
 .hoverp{
 
-  font-size: 10px !important;
+  font-size: 14px !important;
 }
 
     .cardhover{
@@ -982,5 +975,29 @@ color:white !important;
     margin-bottom: 80px;
     padding:20px;
     width:80%;
+  }
+}
+
+.client-logo {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width:540px){
+  .client-logo {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+
+  .client-logo img{
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width:768px) and (min-width:540px){
+  .client-logo {
+    margin: auto;
+    margin-bottom: 30px;
   }
 }
