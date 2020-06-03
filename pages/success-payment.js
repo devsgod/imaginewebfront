@@ -30,7 +30,10 @@ class TeamOne extends Component {
         var orderid = url.searchParams.get("orderid");
 
         if (!!orderid)
-            if (localStorage.getItem('orderData')){            
+            if (localStorage.getItem('orderData')){          
+                
+                localStorage.removeItem('orderData');
+                localStorage.removeItem('paymentType');
                 var sendData = JSON.parse(localStorage.getItem('orderData'));
                 sendData.orderid = orderid;
                 if (localStorage.getItem('paymentType') == 'payfast'){
@@ -38,8 +41,6 @@ class TeamOne extends Component {
                         .then(response => {
                             onInitData();
                             console.log("ok",response);
-                            localStorage.removeItem('orderData');
-                            localStorage.removeItem('paymentType');
                         })
                         .catch(function (error) {
                         });
