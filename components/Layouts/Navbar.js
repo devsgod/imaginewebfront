@@ -25,7 +25,7 @@ class Navbar extends React.Component {
         this.setState({
             collapsed: !this.state.collapsed,
         });
-        // if (this.state.collapsed) {document.body.style.overflow = "hidden";} else {document.body.style.overflow = "scroll";}
+        if (this.state.collapsed) {document.body.style.overflow = "hidden";} else {document.body.style.overflow = "scroll";}
     };
 
     handleDrawer = () => {
@@ -46,15 +46,15 @@ class Navbar extends React.Component {
 
     componentDidMount() {
         this._isMounted = true;
-        // let elementId = document.getElementById("navbar");
-        // document.addEventListener("scroll", () => {
-        //     if (window.scrollY > 170) {
-        //         elementId.classList.add("is-sticky");
-        //     } else {
-        //         elementId.classList.remove("is-sticky");
-        //     }
-        // });
-        // window.scrollTo(0, 0);
+        let elementId = document.getElementById("navbar");
+        document.addEventListener("scroll", () => {
+            if (window.scrollY > 170) {
+                elementId.classList.add("is-sticky");
+            } else {
+                elementId.classList.remove("is-sticky");
+            }
+        });
+        window.scrollTo(0, 0);
 
         // set cart count
 
