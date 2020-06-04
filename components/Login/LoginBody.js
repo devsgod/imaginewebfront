@@ -57,10 +57,10 @@ class LoginBody extends Component {
     onSubmit = e => {
         e.preventDefault();
 
-        // if (!this.state.captcha) {
-        //     this.setState({ msg: "Please do the human check!" });
-        //     return;
-        // }
+        if (!this.state.captcha) {
+            this.setState({ msg: "Please do the human check!" });
+            return;
+        }
 
         const { email, password } = this.state;
 

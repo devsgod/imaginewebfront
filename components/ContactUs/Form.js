@@ -21,6 +21,7 @@ class Form extends Component {
         message: '',
         businesstype: 'None',
         captcha: false,
+        msg:""
     };
 
     onBusinessType = (event) => {
@@ -33,25 +34,27 @@ class Form extends Component {
     onSubmit = e => {
         let { captcha } = this.state;
         if (captcha){
-            e.preventDefault();
+            this.setState({ msg: "Please do the human check!" });
+            return;
+        }
+        e.preventDefault();
 
-            const { name, email, phone, subject, message } = this.state;
-    
-            const data = {
-                name,
-                email,
-                phone,
-                subject,
-                message
-            };
-    
-            axios.post(config.CONTACT_FORM, data)
-                .then(res => {
-                    console.log(res);
-                })
-                .catch(function (error) {
-                });
-        }        
+        const { name, email, phone, subject, message } = this.state;
+
+        const data = {
+            name,
+            email,
+            phone,
+            subject,
+            message
+        };
+
+        axios.post(config.CONTACT_FORM, data)
+            .then(res => {
+                console.log(res);
+            })
+            .catch(function (error) {
+            });
     };
 
     onCaptchaChange = e => {
@@ -99,7 +102,7 @@ class Form extends Component {
                                 <h1 style={{ color: "black", textAlign:"center" }}> We're <span style={{ color: "#1e92a5" }}>  Here </span>  to  Help!</h1>
                                 <p >Fill in your details below and we will get back to you soon</p>
                             </div>
-
+                            {this.state.msg ? (<p>{this.state.msg}</p>) : null}
                             <form id="contactForm" onSubmit={this.onSubmit}>
                                 <div className="row">
                                     <div className="col-lg-12 col-md-12">

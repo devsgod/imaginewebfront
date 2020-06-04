@@ -31,9 +31,10 @@ class SignupBody extends Component {
         lastName: '',
         mobile: '',
         accountname: '',
-        captcha: true,
+        captcha: false,
         businesstype: 'None',
-        companyName: ''
+        companyName: '',
+        message:""
     };
     
     static propTypes = {
@@ -52,9 +53,9 @@ class SignupBody extends Component {
         if (error !== prevProps.error) {
           // Check for register error
           if (error.id === 'REGISTER_FAIL') {
-            this.setState({ msg: error.msg.msg });
+            this.setState({ message: error.msg.msg });
           } else {
-            this.setState({ msg: null });
+            this.setState({ message: null });
           }
         }
     
@@ -73,11 +74,11 @@ class SignupBody extends Component {
     
         if ( !this.state.captcha )
         {
-            this.setState({msg: "Please do the human check!"});
+            this.setState({message: "Please do the human check!"});
             return;
         }
 
-        const { username, email, password, firstName, lastName, mobile, accountname, businesstype, msg, companyName } = this.state;
+        const { username, email, password, firstName, lastName, mobile, accountname, businesstype, msg, companyName, message } = this.state;
     
         // Create user object
         const newUser = {
@@ -131,6 +132,8 @@ class SignupBody extends Component {
                                </div>
                                
                                 <p className = "register-guide">Fill in your details below and within 10 minutes, you are changing content.</p>
+                                {this.state.message ? (<p>{this.state.message}</p>) : null}
+
                                 <form onSubmit={this.onSubmit}>
                                     <div className="row">
                                         <div className="col-lg-12">
