@@ -285,7 +285,7 @@ class SignupBody extends Component {
 
                                         <div className="col-lg-12" style={{marginTop:20}}>
                                         <ReCAPTCHA
-                                            sitekey="6LeU-f8UAAAAAH_vgN4JD8TFYf81nK-fpPg0SOCB"
+                                            sitekey="6LffUwAVAAAAALoK9Mcrg-VpVKw_FnIALmFsX4Pg"
                                             onChange={this.onCaptchaChange}
                                         />
                                         </div>

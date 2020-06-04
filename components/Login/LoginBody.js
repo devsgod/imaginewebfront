@@ -149,7 +149,7 @@ class LoginBody extends Component {
 
                                         <div className="col-lg-12" style={{marginTop:20,marginBottom:20}}>
                                             <ReCAPTCHA
-                                                sitekey="6LeU-f8UAAAAAH_vgN4JD8TFYf81nK-fpPg0SOCB"
+                                                sitekey="6LeXVAAVAAAAADI_n1Yq1hue3T4VaV8x3xozH2HF"
                                                 onChange={this.onCaptchaChange}
                                             />
                                         </div>
