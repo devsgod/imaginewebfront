@@ -25,6 +25,7 @@ class Navbar extends React.Component {
         this.setState({
             collapsed: !this.state.collapsed,
         });
+        if (this.state.collapsed) {document.body.style.overflow = "hidden";} else {document.body.style.overflow = "scroll";}
     };
 
     handleDrawer = () => {

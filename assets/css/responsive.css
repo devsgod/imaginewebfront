@@ -2019,7 +2019,8 @@
     padding: 10px 0;
   }
   .crake-nav nav .navbar-nav li {
-    padding: 5px 15px !important;
+    /* padding: 2.4vh 15px !important; */
+    height: 8.5vh;
   }
   .crake-nav nav .navbar-nav li a {
     font-size: 15px;

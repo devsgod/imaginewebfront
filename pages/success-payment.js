@@ -26,6 +26,10 @@ class TeamOne extends Component {
         props.onInitCheckout(data);
     };
 
+    // componentWillMount(){
+    //     this.onInitData();
+    // }
+
     componentDidMount() {
         const link_route = window.location.href;
         var url = new URL(link_route);

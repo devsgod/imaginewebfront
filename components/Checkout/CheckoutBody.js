@@ -101,7 +101,8 @@ function CheckoutBody(props) {
             payment: 'payfast',
             shipping : props.shipping,
             tax : props.tax,
-            total : props.total
+            total : props.total,
+            subTotal : props.subTotal
         };
 
         let sendData = {
@@ -125,9 +126,9 @@ function CheckoutBody(props) {
                 sendPayfastData = {
                     'merchant_id' : '10017787',
                     'merchant_key' : 'e4ci33twcnswy',
-                    'return_url' : 'http://web.imaginesignage.com/success-payment' + "?orderid=" + response.data.orderid,
-                    'cancel_url' : 'http://web.imaginesignage.com/cancel-payment',
-                    'notify_url' : 'http://web.imaginesignage.com/notify-payment',
+                    'return_url' : 'http://imaginesignage.com/success-payment' + "?orderid=" + response.data.orderid,
+                    'cancel_url' : 'http://imaginesignage.com/cancel-payment',
+                    'notify_url' : 'http://imaginesignage.com/notify-payment',
                     'name_first' : firstName,
                     'name_last'  : lastName,
                     'email_address' : email,
