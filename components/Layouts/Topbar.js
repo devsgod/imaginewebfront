@@ -68,8 +68,8 @@ class Topbar extends Component {
                     <div className="row">
                         <div className="col-lg-6 col-md-7 col-sm-8 col-12">
                             <div className="contact-list">
-                                <Link href="tel:+27218510119"><a style={{color:"white", fontSize:13}}><i className="icofont-phone" style={{color:"white"}}></i> +27 21 851 0119</a></Link> &nbsp;&nbsp;|&nbsp;&nbsp; 
-                                <Link href="mailto:support@imaginesignage.com"><a style={{color:"white", fontSize:15}}><i className="icofont-envelope" style={{color:"white"}}></i> info@imaginesignage.com</a></Link>
+                                <Link href="tel:+27218510119"><a className="topbar-contact-phone"><i className="icofont-phone" style={{color:"white"}}></i> +27 21 851 0119</a></Link> &nbsp;&nbsp;|&nbsp;&nbsp; 
+                                <Link href="mailto:support@imaginesignage.com"><a className="topbar-contact-email"><i className="icofont-envelope" style={{color:"white"}}></i> info@imaginesignage.com</a></Link>
                             </div>
                         </div>
                         {isAuthStatus ? loggedin : guest}

@@ -108,6 +108,8 @@ class SignupBody extends Component {
     onCaptchaChange = e => {
         if ( !!e){
             this.setState({captcha: true});
+        } else {
+            this.setState({ captcha: false });            
         }
     };
 

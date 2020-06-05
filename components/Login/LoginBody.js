@@ -96,6 +96,8 @@ class LoginBody extends Component {
     onCaptchaChange = e => {
         if (!!e) {
             this.setState({ captcha: true });
+        } else {
+            this.setState({ captcha: false });            
         }
     };
 

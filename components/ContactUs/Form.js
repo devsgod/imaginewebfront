@@ -32,12 +32,14 @@ class Form extends Component {
     };
 
     onSubmit = e => {
+        e.preventDefault();
+
         let { captcha } = this.state;
-        if (captcha){
+        console.log(captcha)
+        if (!captcha){
             this.setState({ msg: "Please do the human check!" });
             return;
         }
-        e.preventDefault();
 
         const { name, email, phone, subject, message } = this.state;
 
@@ -52,6 +54,7 @@ class Form extends Component {
         axios.post(config.CONTACT_FORM, data)
             .then(res => {
                 console.log(res);
+                alert("Successfully Accepted!");
             })
             .catch(function (error) {
             });
@@ -60,6 +63,8 @@ class Form extends Component {
     onCaptchaChange = e => {
         if (!!e) {
             this.setState({ captcha: true });
+        } else {
+            this.setState({ captcha: false });
         }
     };
 
