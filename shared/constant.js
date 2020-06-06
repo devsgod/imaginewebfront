@@ -42,14 +42,12 @@ const features_list = [{
         title: "Touch integration",
         text: "Navigate forms with touch screen or cycle media content with a clicker",
         icon: "touch-integration.svg"
-    },
-   
+    },   
     {
         title: "Content Widgets",
         text: "Choose from a variety of free and paid content feeds",
         icon: "content-widgets.svg"
-    },
-   
+    },   
     {
         title: "Drag & Drop Media",
         text: "Quickly and easily move media from the timeline to the layout",
