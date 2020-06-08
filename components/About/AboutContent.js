@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Link from 'next/link';
 
 class AboutContent extends Component {
     render() {
@@ -43,33 +44,39 @@ class AboutContent extends Component {
                         </div>
                         <div className="row">
                             <div className="col-lg-4 col-md-6">
-                                <div className="about-text">
-                                    <div className="icon">
-                                        <i className="icofont-gift"></i>
+                                <Link href="/clients">
+                                    <div className="about-text">
+                                        <div className="icon">
+                                            <i className="icofont-gift"></i>
+                                        </div>
+                                        <h3>Who we work with</h3>
+                                        <p>Our partners</p>
                                     </div>
-                                    <h3>Who we work with</h3>
-                                    <p>Our partners</p>
-                                </div>
+                                </Link>                                
                             </div>
 
                             <div className="col-lg-4 col-md-6">
-                                <div className="about-text">
-                                    <div className="icon">
-                                        <i className="icofont-gift"></i>
+                                <Link href={{ pathname:"/licence", query:{name:"faq"}}}>
+                                    <div className="about-text">
+                                        <div className="icon">
+                                            <i className="icofont-gift"></i>
+                                        </div>
+                                        <h3>Need more info?</h3>
+                                        <p>FAQ's</p>
                                     </div>
-                                    <h3>Need more info?</h3>
-                                    <p>FAQ's</p>
-                                </div>
+                                </Link>                                
                             </div>
 
                             <div className="col-lg-4 col-md-6">
-                                <div className="about-text">
-                                    <div className="icon">
-                                        <i className="icofont-gift"></i>
+                                <Link href="/blog">
+                                    <div className="about-text">
+                                        <div className="icon">
+                                            <i className="icofont-gift"></i>
+                                        </div>
+                                        <h3>Read our stories</h3>
+                                        <p>Our blog</p>
                                     </div>
-                                    <h3>Read our stories</h3>
-                                    <p>Our blog</p>
-                                </div>
+                                </Link>                                
                             </div>
 
                         </div>

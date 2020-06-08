@@ -14,7 +14,7 @@ const Cards = () => {
         <div className="container mt100"  >
             <Row>
                 <Col>
-                    <div className="mb100">
+                    <div className="mb30">
                         <div className="section-title">
                             <h2 >What Are You Looking For?</h2>
                             <p className="black">Getting started on the right foot</p>                          

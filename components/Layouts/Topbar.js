@@ -50,7 +50,7 @@ class Topbar extends Component {
                 </Link>
             </div>
         );
-    
+
         const guest = (
             <div className="col-lg-6 col-md-5 col-sm-4 col-12 topbar-text-right sign-btns">
                 <Link href="/login">
@@ -83,7 +83,7 @@ class Topbar extends Component {
 const mapStateToProps = state => ({
     auth: state.auth,
 });
-  
+
 export default connect(
     mapStateToProps,
     { logout }
