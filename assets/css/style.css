@@ -7230,3 +7230,25 @@ Back To Top CSS
   }
 
 }
+
+.shop-nav-subtitle{
+  padding-top: 15px;
+  font-weight: bold;
+}
+
+.shop-nav-subtext{
+  padding-top: 6px;
+}
+
+.shop-nav-subimg{
+  margin-top: 9px;
+  padding: 13px;
+}
+
+.shop-nav-subline{  
+  height: 10px;  
+  width: 100%;
+  border-bottom: 1px solid #ffc800;
+  margin-left: 20px;
+  margin-right: 40px;
+}
