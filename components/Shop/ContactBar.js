@@ -8,13 +8,13 @@ const ContactBar = (props) => {
             </div>
             <div className='contact-body'>
                 <div className='row'>
-                    <div className='col-3'></div>
+                    <div className='col-3'><img style={{marginTop:"20px", padding:"5px"}} src={require("../../images/shop/sidebar_svg/1. Imagine.svg")}/></div>
                     <div className='col-9'>
                         <div style={{paddingTop : '20px'}}>
-                            FREE DELIVERY
+                            IMAGINE SOFTWARE
                         </div>
                         <div style={{paddingTop : '20px'}}>
-                            On Order Over $49.86
+                            Pre-installed and configured
                         </div>
                     </div>
                     <div style={{height: '10px', width : '100%', borderBottom : '1px solid #ffc800',
@@ -22,13 +22,13 @@ const ContactBar = (props) => {
                     }}></div>
                 </div>
                 <div className='row'>
-                    <div className='col-3'></div>
+                    <div className='col-3'><img style={{marginTop:"20px", padding:"5px"}} src={require("../../images/shop/sidebar_svg/2. Payment.svg")}/></div>
                     <div className='col-9'>
                         <div style={{paddingTop : '20px'}}>
-                            ORDER PROTECTION
+                            PAYMENT PROTECTION
                         </div>
                         <div style={{paddingTop : '20px'}}>
-                            Secured information
+                            South Africa and international
                         </div>
                     </div>
                     <div style={{height: '10px', width : '100%', borderBottom : '1px solid #ffc800',
@@ -36,13 +36,13 @@ const ContactBar = (props) => {
                     }}></div>
                 </div>
                 <div className='row'>
-                    <div className='col-3'></div>
+                    <div className='col-3'><img style={{marginTop:"20px", padding:"5px"}} src={require("../../images/shop/sidebar_svg/3. Delivery.svg")}/></div>
                     <div className='col-9'>
                         <div style={{paddingTop : '20px'}}>
-                            PROMOTION GIFT
+                            DELIVERY AVAILABLE
                         </div>
                         <div style={{paddingTop : '20px'}}>
-                            Special Offers!
+                            Local or international delivery
                         </div>
                     </div>
                     <div style={{height: '10px', width : '100%', borderBottom : '1px solid #ffc800',
@@ -50,13 +50,13 @@ const ContactBar = (props) => {
                     }}></div>
                 </div>
                 <div className='row'>
-                    <div className='col-3'></div>
+                    <div className='col-3'><img style={{marginTop:"20px", padding:"5px"}} src={require("../../images/shop/sidebar_svg/4. Warranty.svg")}/></div>
                     <div className='col-9'>
                         <div style={{paddingTop : '20px'}}>
-                            MONEY BACK
+                            WARRANTY
                         </div>
                         <div style={{paddingTop : '20px'}}>
-                            Return Over 30 Days
+                            2~3 year Manufacture warranty
                         </div>
                     </div>
                     <div style={{height: '10px', width : '100%',
