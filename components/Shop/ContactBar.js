@@ -8,7 +8,7 @@ const ContactBar = (props) => {
             </div>
             <div className='contact-body'>
                 <div className='row'>
-                    <div className='col-3'><img style={{marginTop:"20px", padding:"5px"}} src={require("../../images/shop/sidebar_svg/1. Imagine.svg")}/></div>
+                    <div className='col-3'><img style={{marginTop:"20px", padding:"5px"}} src={require("../../images/shop/sidebar_svg/1. Imagine.png")}/></div>
                     <div className='col-9'>
                         <div style={{paddingTop : '20px'}}>
                             IMAGINE SOFTWARE
