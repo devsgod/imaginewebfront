@@ -156,7 +156,7 @@ class Footer extends React.Component {
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="/licence">
+                                        <Link href={{ pathname:"/licence", query:{name:"faq"}}} >
                                             <a>FAQ</a>
                                         </Link>
                                     </li>

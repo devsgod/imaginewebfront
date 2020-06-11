@@ -10,9 +10,7 @@ import PricingFaqContent from '../components/Pricing/PricingFaqContent';
 import StillHelp from '../components/Pricing/StillHelp';
 
 import CtaCard from '../components/Saas/CtaCard';
-// import GalleryContent from '../components/Saas/GalleryContent';
-
-// const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)   
+// import GalleryContent from '../components/Saas/GalleryContent'; 
 
 class PricingOne extends Component {
 
@@ -20,21 +18,27 @@ class PricingOne extends Component {
         super(props);
         this.myRef = React.createRef();
     }
-
-    componentDidMount(){
+    
+    componentDidMount(){        
         const link_route = window.location.href;
         var url = new URL(link_route);
         var type = url.searchParams.get("name");
         if (type == 'faq'){
-            var self = this;
-            setTimeout(function(){             
-                window.scrollTo(0, self.myRef.current.offsetTop);
-            }, 1000);
+            window.requestAnimationFrame(this.checkReadyState);
         }
     }
-    
-    scrollToMyRef = () => window.scrollTo(0, this.myRef.current.offsetTop)   
 
+	checkReadyState = () => {
+		if (document.readyState === 'complete') {
+            var self = this;
+			setTimeout(() => {
+                window.scrollTo(0, self.myRef.current.offsetTop);
+			}, 200);
+		} else {
+                window.requestAnimationFrame(this.checkReadyState);
+		}
+    }
+    
     render() {
         return (
             <React.Fragment >
