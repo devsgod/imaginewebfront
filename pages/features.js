@@ -1,24 +1,24 @@
 import React, { Component } from 'react';
-import Banner from '../../components/Features/Banner';
-import Navbar from '../../components/Layouts/Navbar';
-import Footer from '../../components/Layouts/Footer';
-import Our from "../../components/Features/Our"
-import All from "../../components/Features/All"
+import Banner from '../components/Features/Banner';
+import Navbar from '../components/Layouts/Navbar';
+import Footer from '../components/Layouts/Footer';
+import Our from "../components/Features/Our"
+import All from "../components/Features/All"
 
-import ourimg1 from "../../images/features/play.png"
-import ourimg2 from "../../images/features/dash.png"
-import ourimg3 from "../../images/features/All/Q.png"
-import ourimg4 from "../../images/features/All/Overlay.png"
+import ourimg1 from "../images/features/play.png"
+import ourimg2 from "../images/features/dash.png"
+import ourimg3 from "../images/features/All/Q.png"
+import ourimg4 from "../images/features/All/Overlay.png"
 
-import Overview from '../../components/Features/Overview';
-import Platform from '../../components/Features/Platform';
-import Htext from "../../components/Features/yazı";
-import Bar from "../../components/Features/Bar";
-import Multi from "../../components/Features/Multicard";
-import CtaCard from '../../components/Saas/CtaCard';
+import Overview from '../components/Features/Overview';
+import Platform from '../components/Features/Platform';
+import Htext from "../components/Features/yazı";
+import Bar from "../components/Features/Bar";
+import Multi from "../components/Features/Multicard";
+import CtaCard from '../components/Saas/CtaCard';
 
-import GalleryContent from '../../components/Saas/GalleryContent';
-import Cards from "../../components/Features/Cardsforfetaure";
+import GalleryContent from '../components/Saas/GalleryContent';
+import Cards from "../components/Features/Cardsforfetaure";
 
 class Features extends Component {
     render() {

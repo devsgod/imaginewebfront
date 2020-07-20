@@ -144,15 +144,20 @@ class Navbar extends React.Component {
                                             </Link>
                                             <ul className="dropdown_menu">
                                                 <li className="nav-item">
-                                                    <Link activeClassName="active" href="/software/features">
+                                                    <Link activeClassName="active" href="/features">
                                                         <a className="nav-link"><div className="icon text-center"><i className="icofont-newspaper"></i></div> Features</a>
                                                     </Link>
                                                 </li> 
                                                 <li className="nav-item">
-                                                    <Link activeClassName="active" href="/software/widgets">
+                                                    <Link activeClassName="active" href="/widgets">
                                                         <a className="nav-link"><div className="icon text-center"><i className="icofont-responsive"></i></div> Widgets</a>
                                                     </Link>
-                                                </li>                                                                                               
+                                                </li>
+                                                <li className="nav-item">
+                                                    <Link activeClassName="active" href="/licence">
+                                                        <a className="nav-link"><div className="icon text-center"><i className="icofont-license"></i></div>Licence</a>
+                                                    </Link>                                            
+                                                </li>                                                                                          
                                             </ul>
                                         </li>                                       
 
@@ -160,11 +165,6 @@ class Navbar extends React.Component {
                                             <Link activeClassName="active" href="/allinone">                                               
                                                 <a className="nav-link">All in one</a>
                                             </Link>
-                                        </li>
-                                        <li className="nav-item">
-                                            <Link activeClassName="active" href="/licence">
-                                                <a className="nav-link">Licence</a>
-                                            </Link>                                            
                                         </li>
                                         <li className="nav-item">
                                             <Link activeClassName="active" href="/shop">

@@ -73,7 +73,7 @@ class Footer extends React.Component {
                                 <h3>Sofware</h3>
                                 <ul className="list">
                                     <li>
-                                        <Link href="software/features">
+                                        <Link href="/features">
                                             <a>Features</a>
                                         </Link>
                                     </li>
@@ -83,7 +83,7 @@ class Footer extends React.Component {
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="software/widgets">
+                                        <Link href="/widgets">
                                             <a>Widgets</a>
                                         </Link>
                                     </li>
@@ -102,42 +102,42 @@ class Footer extends React.Component {
 
                                 <ul className="list">
                                     <li>
-                                        <Link href="industries/retail">
+                                        <Link href="/industries/retail">
                                             <a>Retail</a>
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="industries/restaurants">
+                                        <Link href="/industries/restaurants">
                                             <a>Restaurants</a>
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="industries/education">
+                                        <Link href="/industries/education">
                                             <a>Education</a>
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="industries/corporate">
+                                        <Link href="/industries/corporate">
                                             <a>Coporate</a>
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="industries/hospitality">
+                                        <Link href="/industries/hospitality">
                                             <a>Hospitality</a>
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="industries/healthcare">
+                                        <Link href="/industries/healthcare">
                                             <a>Healthcare</a>
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="industries/gambling">
+                                        <Link href="/industries/gambling">
                                             <a>gambling</a>
                                         </Link>
                                     </li>                                    
                                     <li>
-                                        <Link href="industries/outdoor">
+                                        <Link href="/industries/outdoor">
                                             <a>Outdoor</a>
                                         </Link>
                                     </li>

@@ -12,7 +12,7 @@ class PaypalExrpressBtn extends React.Component{
         this.setState({EnabledState : true});
 
         window.paypal.Button.render({
-            env : 'sandbox',
+            env : '',
             client : {
                 sandbox : 'AU2GLhS-ylt39bl3oXEwZvRDx-UlE6hv8Y79P5xvqFNKG6gctm3-u3VjNq0yj1atgO9rPOdJPleb48oZ',
             },

@@ -30,7 +30,7 @@ const Cards = () => {
                             <img src={logo1} alt="" className="imglogo"></img>
                             <h4 className="mb10 mt5">Software</h4>
                             <p className="responsecardp">Digital Signage software which manages your screens and controls your  content displayed.</p>                          
-                            <Link href="/software/features">
+                            <Link href="/features">
                                 <Button variant="contained" className="buttonmres1">Overview</Button>
                             </Link>
                         </div>

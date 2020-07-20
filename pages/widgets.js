@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
-import Navbar from '../../components/Layouts/Navbar';
-import Footer from '../../components/Layouts/Footer';
-import WidgetBanner from '../../components/Widget/WidgetBanner';
-import WidgetContent from '../../components/Widget/WidgetContent';
-import Widgetimages from "../../images/widgets.png"
-import Tel from "../../components/Widget/television"
-import Paper from "../../components/Widget/paper"
-import Title from "../../components/titlecomponent/titlecomponent"
-import Bar from "../../components/Features/Bar"
-import Cards from "../../components/Widget/newCard"
-import Ex from "../../components/Features/exten"
+import Navbar from '../components/Layouts/Navbar';
+import Footer from '../components/Layouts/Footer';
+import WidgetBanner from '../components/Widget/WidgetBanner';
+import WidgetContent from '../components/Widget/WidgetContent';
+import Widgetimages from "../images/widgets.png"
+import Tel from "../components/Widget/television"
+import Paper from "../components/Widget/paper"
+import Title from "../components/titlecomponent/titlecomponent"
+import Bar from "../components/Features/Bar"
+import Cards from "../components/Widget/newCard"
+import Ex from "../components/Features/exten"
 
-import dash1 from "../../images/widgets/1.png"
-import dash2 from "../../images/widgets/2.png"
-import dash3 from "../../images/widgets/3.png"
-import dash4 from "../../images/widgets/4.png"
-import dash5 from "../../images/widgets/5.png"
+import dash1 from "../images/widgets/1.png"
+import dash2 from "../images/widgets/2.png"
+import dash3 from "../images/widgets/3.png"
+import dash4 from "../images/widgets/4.png"
+import dash5 from "../images/widgets/5.png"
 
 class Widgets extends Component {
     static async getInitialProps({ query }) { 

@@ -59,7 +59,7 @@ class Partner extends React.Component {
                         <div style={{display:"flex",flexDirection:"column", justifyContent:"center",alignItems:"center",textAlign:"center"}} className="section-title">
                             <h2 className="pb-3"  >Informative, educational, functional and entertaining content widgets.</h2>
                             <p>Boost your content loop with our awesome content widget partners. Select from a range of free news, social and informational feeds, or shop from our premium store for flight arrivals and specialized feeds.</p>
-                            <Link href="/software/widgets" >
+                            <Link href="/widgets" >
                                 <Button variant="contained" style={{backgroundColor:"#FB6520",color:"white",marginTop:50,textTransform:"none"}} component={"a"}>
                                 See Our Widgets
                                 </Button>
