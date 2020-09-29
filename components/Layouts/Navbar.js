@@ -108,7 +108,7 @@ class Navbar extends React.Component {
                 <div>
                 <header id="header">
                     <Topbar />
-                    <div id="navbar" className={`crake-nav ${layOutCls}`}>
+                    <div id="navbar" className={`crake-nav ${layOutCls}`} style={{background:"#E0E0E0"}}>
                         <div className="container">
                             <nav className="navbar navbar-expand-md navbar-light">
                                 <Link href="/">
@@ -134,7 +134,7 @@ class Navbar extends React.Component {
                                         
                                         <li className="nav-item">
                                             <Link activeClassName="active" href="/">
-                                                <a className="nav-link"><img src={require('../../images/home/big-home-icon.png')} alt="Home" style={{width: "25px"}}/></a>
+                                                <a className="nav-link"><i className="icofont-home"></i> Home</a>
                                             </Link>
                                         </li>
 
@@ -143,6 +143,11 @@ class Navbar extends React.Component {
                                                 <a className="nav-link">Software</a>
                                             </Link>
                                             <ul className="dropdown_menu">
+                                                <li className="nav-item">
+                                                    <Link activeClassName="active" href="#">
+                                                        <a className="nav-link"><div className="icon text-center"><i className="icofont-paper-plane"></i></div> Overview</a>
+                                                    </Link>
+                                                </li> 
                                                 <li className="nav-item">
                                                     <Link activeClassName="active" href="/features">
                                                         <a className="nav-link"><div className="icon text-center"><i className="icofont-newspaper"></i></div> Features</a>
@@ -159,20 +164,49 @@ class Navbar extends React.Component {
                                                     </Link>                                            
                                                 </li>                                                                                          
                                             </ul>
-                                        </li>                                       
+                                        </li>       
 
                                         <li className="nav-item">
-                                            <Link activeClassName="active" href="/allinone">                                               
-                                                <a className="nav-link">All in one</a>
+                                            <Link activeClassName="active" href="#">
+                                                <a className="nav-link">Platforms</a>
                                             </Link>
-                                        </li>
+                                            <ul className="dropdown_menu">
+                                                <li className="nav-item">
+                                                    <Link activeClassName="active" href="#">
+                                                        <a className="nav-link"><div className="icon text-center"><i className="icofont-brand-windows"></i></div>Windows</a>
+                                                    </Link>
+                                                </li> 
+                                                <li className="nav-item">
+                                                    <Link activeClassName="active" href="/allinone">
+                                                        <a className="nav-link"><div className="icon text-center"><i className="icofont-document-folder"></i></div> LG all in one</a>
+                                                    </Link>
+                                                </li> 
+                                                <li className="nav-item">
+                                                    <Link activeClassName="active" href="#">
+                                                        <a className="nav-link"><div className="icon text-center"><i className="icofont-brand-android-robot"></i></div> Android</a>
+                                                    </Link>
+                                                </li> 
+                                                <li className="nav-item">
+                                                    <Link activeClassName="active" href="#">
+                                                        <a className="nav-link"><div className="icon text-center"><i className="icofont-penguin-linux"></i></div> Linux</a>
+                                                    </Link>
+                                                </li>
+                                                <li className="nav-item">
+                                                    <Link activeClassName="active" href="#">
+                                                        <a className="nav-link"><div className="icon text-center"><i className="icofont-cubes"></i></div>Comparrison</a>
+                                                    </Link>                                            
+                                                </li>                                                                                          
+                                            </ul>
+                                        </li>                                    
+
+                                        
                                         <li className="nav-item">
                                             <Link activeClassName="active" href="/shop">
                                                 <a className="nav-link">Shop</a>
                                             </Link>                                            
                                         </li>  
 
-                                        <li className="nav-item"><a href="#" className="nav-link">Industries</a>
+                                        {/* <li className="nav-item"><a href="#" className="nav-link">Industries</a>
                                             <ul className="dropdown_menu">
                                                 <li className="nav-item">
                                                     <Link activeClassName="active" href="/industries/retail">
@@ -215,7 +249,7 @@ class Navbar extends React.Component {
                                                     </Link>
                                                 </li>
                                             </ul>
-                                        </li>
+                                        </li> */}
                                         
                                         <li className="nav-item"><a href="#" className="nav-link">Company</a>
                                             <ul className="dropdown_menu">
@@ -248,7 +282,7 @@ class Navbar extends React.Component {
                                             </ul>
                                         </li>
                            
-                                        <li>
+                                        {/* <li>
                                             <div className="col-12 sign-btns-nav">
                                                 <Link href="/login">
                                                     <a>Sign in</a>
@@ -261,7 +295,7 @@ class Navbar extends React.Component {
                                                     <a>Sign up</a>
                                                 </Link>
                                             </div>
-                                        </li>
+                                        </li> */}
                                     </ul>
                                 </div>
                                 <div className="mr-auto others-option">
@@ -284,6 +318,9 @@ class Navbar extends React.Component {
                                         </li>
                                     </ul>
                                 </div>
+                                {/* <div className="btn btn-primary">
+                                    <Link href="/signup"><a className="nav-signup">Sign Up</a></Link>                                    
+                                </div> */}
                             </nav>
                         </div> 
                     </div>

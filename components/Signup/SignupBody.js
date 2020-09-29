@@ -97,6 +97,7 @@ class SignupBody extends Component {
         // Attempt to register
         this.props.register(newUser);
         
+        // console.log(newUser);
 
         //Show send status
         if (localStorage)

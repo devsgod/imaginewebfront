@@ -14,7 +14,8 @@ import Router from 'next/router';
 
 class LoginBody extends Component {
     state = {
-        email: '',
+        cms_login_url: '',
+	username: '',
         password: '',
         msg: null,
         captcha: false,
@@ -51,6 +52,8 @@ class LoginBody extends Component {
     }
 
     onChange = e => {
+	    console.log (e.target.name);
+	    console.log(e.target.value);
         this.setState({ [e.target.name]: e.target.value });
     };
 
@@ -61,11 +64,12 @@ class LoginBody extends Component {
             this.setState({ msg: "Please do the human check!" });
             return;
         }
-
-        const { email, password } = this.state;
+	    console.log(this.state);
+        const { cms_login_url, username, password } = this.state;
 
         const user = {
-            email,
+            cms_login_url,
+            username,
             password
         };
 
@@ -77,20 +81,40 @@ class LoginBody extends Component {
             'Content-Type': 'application/json'
             }
         };
-    
+        console.log('Login Called....');
         // Request body
-        const body = JSON.stringify({ email, password });
-        
-        axios
-            .post(config.USER_AUTH, body, config_header)
-            .then(res =>{
-            if (res.data.token)
-            localStorage.setItem('token', res.data.token);
-            Router.push('/');        
-            })
+        const body = JSON.stringify({ cms_login_url, name, password });
+        console.log(body);
+        //axios
+          //  .post(config.USER_AUTH, body, config_header)
+           // .then(res =>{
+           //     console.log(res.data);
+          //  if (res.data.token)
+           // localStorage.setItem('token', res.data.token);
+            // Router.push('/'); 
+            axios
+                .post(cms_login_url+"/admin/login_api", {userName:username, password:password, submit:"Sign In"})
+                .then(response =>{
+			console.log('response');
+                    console.log(response);
+                    // response=JSON.parse(response);
+                    if(response.status=='Success'){
+
+                        Router.push('/');
+                        }
+                    else if(response.status=='Already Logged in'){
+                        Router.push('/');
+                        }
+                    else if(response.status=='Error'){
+                        window.alert(response.message);
+                    }
+                })       
+            //})
             .catch(err => { 
                 console.log(err);
             });
+
+        
     };
 
     onCaptchaChange = e => {
@@ -116,9 +140,9 @@ class LoginBody extends Component {
                                     <div className="row">
                                     <div className="col-lg-12">
                                             <div className="form-group">
-                                                <input type="email"
-                                                    name="email"
-                                                    id="email"
+                                                <input type="text"
+                                                    name="cms_login_url"
+                                                    id="cms_login_url"
                                                     className="form-control"
                                                     placeholder="www.imagine.com"
                                                     onChange={this.onChange}

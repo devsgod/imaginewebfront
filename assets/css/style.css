@@ -7209,23 +7209,26 @@ Back To Top CSS
 
 
 .topbar-contact-phone {
-    color: white;
+    color: black;
     font-size: 14;
 }
 .topbar-contact-email {
-    color: white;
+    color: black;
     font-size: 15;
 }
 
+.nav-signup{
+  color: white;
+}
 
 @media only screen and (max-width: 400px) {
 
   .topbar-contact-phone {
-      color: white;
+      color: black;
       font-size: 12px;
   }
   .topbar-contact-email {
-      color: white;
+      color: black;
       font-size: 13px;
   }
 
