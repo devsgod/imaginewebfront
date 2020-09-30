@@ -7313,3 +7313,13 @@ Back To Top CSS
 .benifits-element:hover > p{
   color:orange;
 }
+
+.list-industry{
+  margin-top: 53px;
+}
+
+@media only screen and (max-width: 600px) {
+  .list-industry{
+    margin-top: 0px;
+  }
+}

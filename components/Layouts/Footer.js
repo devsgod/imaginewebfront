@@ -40,7 +40,7 @@ class Footer extends React.Component {
                             </div>
                         </div>
 
-                        <div className="col-lg-2 col-md-6">
+                        <div className="col-lg-1 col-md-6 mr-5">
                             <div className="single-footer-widget">
                                 <h3>Company</h3>
                                 <ul className="list">
@@ -68,7 +68,7 @@ class Footer extends React.Component {
                             </div>
                         </div>
 
-                        <div className="col-lg-2 col-md-6">
+                        <div className="col-lg-1 col-md-6 mr-5">
                             <div className="single-footer-widget">
                                 <h3>Sofware</h3>
                                 <ul className="list">
@@ -96,7 +96,7 @@ class Footer extends React.Component {
                             </div>
                         </div>
 
-                        <div className="col-lg-2 col-md-6">
+                        <div className="col-lg-1 col-md-6 mr-5">
                             <div className="single-footer-widget">
                                 <h3>Industries</h3>
 
@@ -121,6 +121,14 @@ class Footer extends React.Component {
                                             <a>Coporate</a>
                                         </Link>
                                     </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-1 col-md-6 mr-5">
+                            <div className="single-footer-widget list-industry">
+
+                                <ul className="list">                                    
                                     <li>
                                         <Link href="/industries/hospitality">
                                             <a>Hospitality</a>
@@ -140,12 +148,12 @@ class Footer extends React.Component {
                                         <Link href="/industries/outdoor">
                                             <a>Outdoor</a>
                                         </Link>
-                                    </li>
+                                    </li>                               
                                 </ul>
                             </div>
                         </div>
 
-                        <div className="col-lg-2 col-md-6">
+                        <div className="col-lg-1 col-md-6 mr-5">
                             <div className="single-footer-widget">
                                 <h3>Support</h3>
 
