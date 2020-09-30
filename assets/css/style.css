@@ -7221,6 +7221,10 @@ Back To Top CSS
   color: white;
 }
 
+.nav-signup-link{
+  color: white;
+}
+
 @media only screen and (max-width: 400px) {
 
   .topbar-contact-phone {
@@ -7254,4 +7258,50 @@ Back To Top CSS
   border-bottom: 1px solid #ffc800;
   margin-left: 20px;
   margin-right: 40px;
+}
+
+.benifits-manage{
+  background: url('../../images/windows/hardware_icon_inactive.png');
+}
+
+.benifits-manage:hover{
+  background: url('../../images/windows/hardware_icon_active.png');
+}
+
+.benifits-features{
+  background: url('../../images/windows/special_icon_inactive.png');
+}
+
+.benifits-features:hover{
+  background: url('../../images/windows/special_icon_active.png');
+}
+
+.benifits-setup{
+  background: url('../../images/windows/setup_icon_inactive.png');
+}
+
+.benifits-setup:hover{
+  background: url('../../images/windows/setup_icon_active.png');
+}
+
+.benifits-price{
+  background: url('../../images/windows/price_icon_inactive.png');
+}
+
+.benifits-price:hover{
+  background: url('../../images/windows/price_icon_active.png');
+}
+
+.benifits-support{
+  background: url('../../images/windows/support_icon_inactive.png');
+}
+
+.benifits-support:hover{
+  background: url('../../images/windows/support_icon_active.png');
+}
+
+.benifits-size{
+  width: 138px;
+  height: 140px;
+  margin: auto;
 }

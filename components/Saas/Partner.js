@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
 import {Button} from "@material-ui/core"
-import LoadBar from "./Loadbar"
 import dynamic from 'next/dynamic';
 import imaged from "../../images/widgets.png"
 const OwlCarousel = dynamic(import('react-owl-carousel3'));

@@ -63,7 +63,7 @@ class Topbar extends Component {
         );
 
         return (
-            <section className="topbar" style={{backgroundColor:"#FFFFFFF"}}>
+            <section className="topbar"  style={{background:"#F8F8F8"}}>
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6 col-md-7 col-sm-8 col-12">

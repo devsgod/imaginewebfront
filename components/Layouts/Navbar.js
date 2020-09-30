@@ -108,7 +108,7 @@ class Navbar extends React.Component {
                 <div>
                 <header id="header">
                     <Topbar />
-                    <div id="navbar" className={`crake-nav ${layOutCls}`} style={{background:"#E0E0E0"}}>
+                    <div id="navbar" className={`crake-nav ${layOutCls}`}>
                         <div className="container">
                             <nav className="navbar navbar-expand-md navbar-light">
                                 <Link href="/">
@@ -172,7 +172,7 @@ class Navbar extends React.Component {
                                             </Link>
                                             <ul className="dropdown_menu">
                                                 <li className="nav-item">
-                                                    <Link activeClassName="active" href="#">
+                                                    <Link activeClassName="active" href="/windows">
                                                         <a className="nav-link"><div className="icon text-center"><i className="icofont-brand-windows"></i></div>Windows</a>
                                                     </Link>
                                                 </li> 
@@ -198,7 +198,6 @@ class Navbar extends React.Component {
                                                 </li>                                                                                          
                                             </ul>
                                         </li>                                    
-
                                         
                                         <li className="nav-item">
                                             <Link activeClassName="active" href="/shop">
@@ -304,7 +303,6 @@ class Navbar extends React.Component {
                                             <Link activeClassName="active" href="/cart">
                                                 <a>
                                                     <i style={{color : cartCount > 0 && '#ffbc00'}} className="icofont-shopping-cart cart-icon"></i>
-
                                                     <span style={{backgroundColor : cartCount > 0 && '#ff0101'}} >{cartCount}</span>
                                                 </a>
                                             </Link>
@@ -318,9 +316,9 @@ class Navbar extends React.Component {
                                         </li>
                                     </ul>
                                 </div>
-                                {/* <div className="btn btn-primary">
+                                <div className="btn btn-primary mr-auto others-option">
                                     <Link href="/signup"><a className="nav-signup">Sign Up</a></Link>                                    
-                                </div> */}
+                                </div>
                             </nav>
                         </div> 
                     </div>
