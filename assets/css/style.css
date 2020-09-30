@@ -7305,3 +7305,11 @@ Back To Top CSS
   height: 140px;
   margin: auto;
 }
+
+.benifits-element{
+  color:black;
+}
+
+.benifits-element:hover > p{
+  color:orange;
+}

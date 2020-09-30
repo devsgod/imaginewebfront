@@ -182,17 +182,17 @@ class Navbar extends React.Component {
                                                     </Link>
                                                 </li> 
                                                 <li className="nav-item">
-                                                    <Link activeClassName="active" href="#">
+                                                    <Link activeClassName="active" href="/android">
                                                         <a className="nav-link"><div className="icon text-center"><i className="icofont-brand-android-robot"></i></div> Android</a>
                                                     </Link>
                                                 </li> 
                                                 <li className="nav-item">
-                                                    <Link activeClassName="active" href="#">
+                                                    <Link activeClassName="active" href="/linux">
                                                         <a className="nav-link"><div className="icon text-center"><i className="icofont-penguin-linux"></i></div> Linux</a>
                                                     </Link>
                                                 </li>
                                                 <li className="nav-item">
-                                                    <Link activeClassName="active" href="#">
+                                                    <Link activeClassName="active" href="/comparrison">
                                                         <a className="nav-link"><div className="icon text-center"><i className="icofont-cubes"></i></div>Comparrison</a>
                                                     </Link>                                            
                                                 </li>                                                                                          
