@@ -12,7 +12,7 @@ const Benifits = () => {
     return (
         <div  className="backg  imagines">
         <div className="hero-content  container" >
-            <div className="section-title" ><h2 className={"response un1"}>Packed with Benefits</h2><p className="black" >or Windoes brings a hot of benefits to your digital signage network</p></div>
+            <div className="section-title" ><h2 className={"response un1"}>Packed with Benefits</h2><p className="black" >or Windowsbrings a hot of benefits to your digital signage network</p></div>
 
             <Row className="un1 mt20">
                 <Col  className="benifits-element">
