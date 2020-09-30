@@ -6,7 +6,7 @@ import Banner from '../components/Windows/Banner';
 import WindowsFaqContent from '../components/Windows/WindowsFaqContent';
 import StillHelp from '../components/Windows/StillHelp';
 import Imagıne from "../components/Windows/imagine";
-import Dash from "../components/WIndows/Dash";
+import Dash from "../components/Windows/Dash";
 
 import CtaCard from '../components/Saas/CtaCard';
 import Benifits from '../components/Windows/benifits';
