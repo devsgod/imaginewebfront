@@ -79,7 +79,7 @@ class Footer extends React.Component {
                                     </li>
                                     <li>
                                         <Link href="/allinone">
-                                            <a>All in one</a>
+                                            <a style={{ whiteSpace:"nowrap"}}>All in one</a>
                                         </Link>
                                     </li>
                                     <li>
