@@ -603,7 +603,7 @@ font-weight: 400;
 }
 
 .un1{
-  width: 80%;
+  width: 100%;
   margin: 50px auto 0px;
   text-align: center;
 }
@@ -861,7 +861,7 @@ width: 100% !important;
   justify-content: center;
   width: 55% !important;
   align-items: center;
-  margin: 0 auto;
+  margin: 16px auto;
 
 
 }
@@ -879,7 +879,7 @@ position: relative;
 
 
 .cardm{
-  height: 380px !important;
+  height: 440px !important;
 }
 
 

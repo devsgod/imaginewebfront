@@ -2680,11 +2680,12 @@ CTA CSS
   position: relative;
   z-index: 1;
   padding: 60px 0;
-  /* background-image: url(../../images/cta-bg.jpg);
-  background-position: center center;
+  background-image: url(../../images/cta-bg.png);
+  /* background-position: center center;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat; */
+  height: 300px;
 }
 
 .cta-area::before {
@@ -2694,9 +2695,9 @@ CTA CSS
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
-  background: #FB6520/*#13c4a1*/;
-  opacity: .87;
+  height: 200%;
+  background: #202020;
+  opacity: .5;
 }
 
 .cta-area p {
@@ -2710,13 +2711,13 @@ CTA CSS
 }
 
 .cta-area .btn-primary:not(:disabled):not(.disabled).active, .cta-area .btn-primary:not(:disabled):not(.disabled):active, .cta-area .btn-primary .show > .btn-primary.dropdown-toggle {
-  color: #FB6520;
+  color: #808080;
   background: #ffffff;
 }
 
 .cta-area .btn-primary:hover, .cta-area .btn-primary:focus {
   background: #ffffff;
-  color: #FB6520;
+  color: #808080;
 }
 
 /*================================================

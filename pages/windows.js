@@ -7,6 +7,9 @@ import WindowsFaqContent from '../components/Windows/WindowsFaqContent';
 import StillHelp from '../components/Windows/StillHelp';
 import Imagıne from "../components/Windows/imagine";
 import Dash from "../components/Windows/Dash";
+import ourimg1 from "../images/features/play.png"
+import ourimg2 from "../images/features/dash.png"
+import Our from "../components/Windows/Our"
 
 import CtaCard from '../components/Saas/CtaCard';
 import Benifits from '../components/Windows/benifits';
@@ -31,6 +34,11 @@ class WindowsOne extends Component {
                 <Imagıne></Imagıne>
                 <Benifits></Benifits>
                 <Dash></Dash>
+                <Our
+                title={"Digital Signage that helps you achieve your business goals"}
+                img={ourimg1}
+                img2={ourimg2}
+                ></Our>
                 <section className="faq-area">
 			        <div className="container">
                         <WindowsFaqContent />

@@ -54,10 +54,10 @@ class Topbar extends Component {
         const guest = (
             <div className="col-lg-6 col-md-5 col-sm-4 col-12 topbar-text-right sign-btns">
                 <Link href="/login">
-                    <a  style={{textTransform:"none", marginRight:30}}><i className="icofont-login" style={{marginRight:5}} ></i>Login</a>
+                    <a  style={{textTransform:"none", marginRight:30, fontSize:14}}><i className="icofont-login" style={{marginRight:5}} ></i>Login</a>
                 </Link>
                 <Link href="/contact">
-                    <a style={{textTransform:"none"}}><i className="icofont-envelope" style={{marginRight:5}} ></i>Contact</a>
+                    <a style={{textTransform:"none", fontSize:14}}><i className="icofont-envelope" style={{marginRight:5}} ></i>Contact</a>
                 </Link>&nbsp;&nbsp;&nbsp;
             </div>
         );

@@ -144,7 +144,7 @@ class Navbar extends React.Component {
                                             </Link>
                                             <ul className="dropdown_menu">
                                                 <li className="nav-item">
-                                                    <Link activeClassName="active" href="#">
+                                                    <Link activeClassName="active" href="/overview">
                                                         <a className="nav-link"><div className="icon text-center"><i className="icofont-paper-plane"></i></div> Overview</a>
                                                     </Link>
                                                 </li> 

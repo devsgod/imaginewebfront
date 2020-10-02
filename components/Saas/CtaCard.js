@@ -52,22 +52,25 @@ class CtaCard extends React.Component {
         return (
             <div className="cta-area">
                 <div className="container">
-                    <div className="row h-100 justify-content-center align-items-center">
+                    <div className="row h-100 justify-content-center align-items-center" style={{margin:"auto"}}>
                     {/* <form id="newsletterForm" onSubmit={this.onSubmit}> */}
-                        <div className="col-lg-5 col-md-5">
-                            <p>Want to know more? Enter your e-mail to receive the latest imAGINE software brochure</p>
+                        <div className="col-lg-12 col-md-12">
+                            <p style={{fontSize:40, textAlign:"center"}}>Want To Know More? Enter your E-Mail to receive the latest ImAGINE software brochure</p>
                         </div>
 
-                        <div className="offset-lg-1 offset-md-1 col-lg-4 col-md-4 text-right">
-                            <input type="email" id="email" name="email" className="form-control" placeholder="Email" onChange={this.onChange} />
-                        </div>
+                        <div className="col-lg-12 col-md-12 mt-3" style={{display:"flex", justifyContent:"center"}}>
+                            <div className=" col-lg-4 col-md-4">
+                                <input type="email" id="email" name="email" className="form-control" placeholder="Email" onChange={this.onChange} />
+                            </div>
 
-                        <div className="col-lg-2 col-md-2 text-right">
-                            <Link href="#">
-                                {/* <a className="btn btn-primary">Take a Test Drive</a> */}
-                                <a className="btn btn-primary" onClick={e => this.onSubmit(e)} style={{color: "black"}}>Take a Test Drive</a>
-                            </Link>
+                            <div className="col-lg-3 col-md-3">
+                                <Link href="#">
+                                    {/* <a className="btn btn-primary">Take a Test Drive</a> */}
+                                    <a className="btn btn-primary" onClick={e => this.onSubmit(e)} style={{color: "black"}}>Take a Test Drive</a>
+                                </Link>
+                            </div>
                         </div>
+                        
                     {/* </form> */}
                     </div>
                 </div>
