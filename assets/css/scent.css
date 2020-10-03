@@ -678,7 +678,7 @@ footer li a,  footer h3 {
 }
 }.banner-responsive {
     background-repeat: no-repeat!important;
-    background-size: cover!important;
+    /* background-size: cover!important; */
     background-position-x: 23%!important;
 }
 @media only screen and (max-width:575px) {

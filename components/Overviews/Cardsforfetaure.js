@@ -11,8 +11,8 @@ export default function Card(){
     return(
         <div className="container cardmb" >
 
-            <Grid style={{display:"flex"}} >
-                <Grid item={true} md={4} lg={4} sm={12} xs={12} className="flexcontainer cardhover flexcontainerrelative cardm borderhover"  style={{justifyContent:"start", boxShadow:"0px 0px 14px 4px #e1e1e1", margin:10}}>
+            <Grid className="card-grid" >
+                <Grid item={true} md={4} lg={4} sm={12} xs={12} className="flexcontainer cardhover flexcontainerrelative cardm borderhover card-overview">
                     <div className="flexcontaineralign" >
                         <img src={Logo1} alt="" className="flexcontaineralignimage " ></img>
                     </div>
@@ -25,7 +25,7 @@ export default function Card(){
                     </div>
                 </Grid>
 
-                <Grid item={true} md={4}lg={4} sm={12} xs={12} className="flexcontainer cardhover flexcontainerrelative cardm borderhover" style={{justifyContent:"start", boxShadow:"0px 0px 14px 4px #e1e1e1", margin:10}} >
+                <Grid item={true} md={4}lg={4} sm={12} xs={12} className="flexcontainer cardhover flexcontainerrelative cardm borderhover card-overview">
                     <div className="flexcontaineralign" >
                         <img src={Logo2} alt="" className="flexcontaineralignimage" ></img>
                     </div>
@@ -38,7 +38,7 @@ export default function Card(){
                     </div>
                 </Grid>
                 
-                <Grid item={true} md={4}lg={4} sm={12} xs={12} className="flexcontainer cardhover flexcontainerrelative cardm borderhover"  style={{justifyContent:"start", boxShadow:"0px 0px 14px 4px #e1e1e1", margin:10}}>
+                <Grid item={true} md={4}lg={4} sm={12} xs={12} className="flexcontainer cardhover flexcontainerrelative cardm borderhover card-overview">
                     <div className="flexcontaineralign">
                         <img src={Logo3} alt="" className="flexcontaineralignimage"></img>
                     </div>
