@@ -12,7 +12,7 @@ class Banner extends Component {
                         <p className="banner-text">LG</p>
                     </Col>
                     <Col style={{color:"white"}}>
-                        <Link href="/"><a style={{color:"white"}}>Home</a></Link>  /  <Link><a style={{color:"white"}}>Platform</a></Link>  /  <Link><a style={{color:"white"}}>allinone</a></Link>
+                        <Link href="/"><a style={{color:"white"}}>Home</a></Link>  /  <Link href="#"><a style={{color:"white"}}>Platform</a></Link>  /  <Link href="/allinone"><a style={{color:"white"}}>Allinone</a></Link>
                     </Col>
                 </div>
             </section>
