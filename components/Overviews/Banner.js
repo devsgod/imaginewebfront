@@ -9,7 +9,7 @@ class Banner extends Component {
             <section className="page-title-banner-feature banner-responsive" style={{backgroundImage:`url(${background})`,marginBottom:50}}>
                 <div className="container">
                     <Col >
-                        <p className="banner-text">OVERVIEW</p>
+                        <p className="banner-text-sec">OVERVIEW</p>
                     </Col>
                     <Col style={{color:"white"}}>
                         <Link href="/"><a style={{color:"white"}}>Home</a></Link>  /  <Link><a style={{color:"white"}}>Platform</a></Link>  /  <Link><a style={{color:"white"}}>Overview</a></Link>
