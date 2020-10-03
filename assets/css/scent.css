@@ -596,12 +596,110 @@ footer li a,  footer h3 {
     background-size: 150%!important;
     background-position: center!important;
     margin-top: 100px!important;
-}
+    }
 }@media only screen and (max-width:360px) {
     .page-title-banner-pricing {
     margin-top: 80px!important;
+    }
 }
+
+/** pricing */
+.page-title-banner-lg {
+    position: relative;
+    background: url(/images/banners/pricing.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: 1;
+    margin-top: 120px;
+    padding-top: 120px;
+    padding-bottom: 180px;
+    text-align: center;
 }
+@media only screen and (max-width:991px) {
+    .page-title-banner-lg {
+    background-size: 150%!important;
+    background-position: center!important;
+    margin-top: 100px!important;
+    }
+}@media only screen and (max-width:360px) {
+    .page-title-banner-lg {
+    margin-top: 80px!important;
+    }
+}
+
+/** android */
+.page-title-banner-android {
+    position: relative;
+    background: url(/images/android/androidtop_image.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: 1;
+    margin-top: 120px;
+    padding-top: 120px;
+    padding-bottom: 180px;
+    text-align: center;
+}
+@media only screen and (max-width:991px) {
+    .page-title-banner-android {
+    background-size: 150%!important;
+    background-position: center!important;
+    margin-top: 100px!important;
+    }
+}@media only screen and (max-width:360px) {
+    .page-title-banner-android {
+    margin-top: 80px!important;
+    }
+}
+
+/** linux */
+.page-title-banner-linux {
+    position: relative;
+    background: url(/images/linux/linuxtop_image.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: 1;
+    margin-top: 120px;
+    padding-top: 120px;
+    padding-bottom: 180px;
+    text-align: center;
+}
+@media only screen and (max-width:991px) {
+    .page-title-banner-linux {
+    background-size: 150%!important;
+    background-position: center!important;
+    margin-top: 100px!important;
+    }
+}@media only screen and (max-width:360px) {
+    .page-title-banner-linux {
+    margin-top: 80px!important;
+    }
+}
+
+
+/** windows */
+.page-title-banner-windows {
+    position: relative;
+    background: url(/images/windows/topwindows_image.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: 1;
+    margin-top: 120px;
+    padding-top: 120px;
+    padding-bottom: 180px;
+    text-align: center;
+}
+@media only screen and (max-width:991px) {
+    .page-title-banner-windows {
+    background-size: 150%!important;
+    background-position: center!important;
+    margin-top: 100px!important;
+    }
+}@media only screen and (max-width:360px) {
+    .page-title-banner-windows {
+    margin-top: 80px!important;
+    }
+}
+
 /** client */
 .page-title-banner-client {
     position: relative;

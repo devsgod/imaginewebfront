@@ -1,18 +1,20 @@
 import React, { Component } from 'react';
+import Link from 'next/link';
+import {Col} from "react-bootstrap";
 
 class Banner extends Component {
     render() {
         return (
-            <section className="page-title-banner-pricing banner-responsive">
+            <section className="page-title-banner-linux banner-responsive">
                 <div className="container">
-                    <div className="row">
-                        <div className="col-lg-12">
-                            <h2></h2>
-                        </div>
-                    </div>
+                    <Col >
+                        <p className="banner-text">LINUX</p>
+                    </Col>
+                    <Col style={{color:"white"}}>
+                        <Link href="/"><a style={{color:"white"}}>Home</a></Link>  /  <Link href="#"><a style={{color:"white"}}>Platform</a></Link>  /  <Link href="/linux"><a style={{color:"white"}}>Linux</a></Link>
+                    </Col>
                 </div>
 
-                <div className="shape3"><img src={require('../../images/shape3.png')} alt="img" /></div>
             </section>
         );
     }
