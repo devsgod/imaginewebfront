@@ -26,7 +26,7 @@ const Dash = () => {
                 </Col>
                 <Col md={12} lg={6}  style={{justifyContent:"center" , alignSelf:"center"}}>
                     <div style={{display:"flex",justifyContent:"center",alignItems:"center"}}  className="settitle">
-                        <h2>Minimum <span style={{color:"orange"}}>Specifications</span></h2>
+                        <h2>Minimum Specifications</h2>
                     </div>   
 
                     <div style={{display:"flex"}}>

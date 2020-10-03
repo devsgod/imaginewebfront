@@ -16,9 +16,9 @@ const Dash = () => {
 
 
     return (
-        <div style={{ marginBottom: 100 }} className="container">
+        <div className="container">
 
-            <Row style={{ marginTop: 100 }} >
+            <Row  >
                 <Col md={12} lg={4} style={{ justifyContent: "center", display: "flex" }}>
                     <img src={dash2} alt=""></img>
                 </Col>
