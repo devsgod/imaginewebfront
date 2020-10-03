@@ -7400,3 +7400,16 @@ Back To Top CSS
     margin-top: 10px;
   }  
 }
+
+.htext-title{
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 600px) {
+  .htext-title{
+    font-weight: 600;
+    white-space: break-spaces;
+  }
+}
+
