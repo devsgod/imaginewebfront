@@ -8,6 +8,9 @@ import {
 } from 'react-accessible-accordion';
 import 'react-accessible-accordion/dist/fancy-example.css';
 
+
+import Link from 'next/link';
+
 const data = [
     {
         question: "How to get started?",
@@ -43,7 +46,7 @@ const data = [
     }
 ]
 
-class ComparrisonFaqContent extends Component {
+class LgFaqContent extends Component {
     render() {
         return (
         <>
@@ -156,4 +159,4 @@ class ComparrisonFaqContent extends Component {
     }
 }
 
-export default ComparrisonFaqContent;
+export default LgFaqContent;

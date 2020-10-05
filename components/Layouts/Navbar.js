@@ -177,7 +177,7 @@ class Navbar extends React.Component {
                                                     </Link>
                                                 </li> 
                                                 <li className="nav-item">
-                                                    <Link activeClassName="active" href="/allinone">
+                                                    <Link activeClassName="active" href="/lg">
                                                         <a className="nav-link"><div className="icon text-center"><i className="icofont-document-folder"></i></div> LG all in one</a>
                                                     </Link>
                                                 </li> 

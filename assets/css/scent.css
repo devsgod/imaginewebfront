@@ -603,10 +603,10 @@ footer li a,  footer h3 {
     }
 }
 
-/** pricing */
+/** lg */
 .page-title-banner-lg {
     position: relative;
-    background: url(/images/banners/pricing.png);
+    background: url(/images/lg/lgtop_image.png);
     background-repeat: no-repeat;
     background-size: 100%;
     z-index: 1;

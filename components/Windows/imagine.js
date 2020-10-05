@@ -33,7 +33,7 @@ const Dash = () => {
 
                     <Row style={{ marginTop: 22, paddingRight: 0, paddingLeft: 20, justifyContent: "center" }}>
                         <Col xs={5} style={{display:"flex", justifyContent: "start", alignItems: "center"}}>
-                            <Link href="/shop/">
+                            <Link href="#">
                                 <Button variant="contained" style={{ backgroundColor: "white", color: "#FB6520", justifyContent: "start", textTransform: "none" }} size="large" component={"a"}>
                                     Download Now</Button>
                             </Link>
