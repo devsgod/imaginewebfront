@@ -58,7 +58,7 @@ class Needassistance extends React.Component {
                             <h4 className="pb-3"  >Need Assistance with getting started?</h4>
                             <p>Get the best support from our technical team.</p>
                             <Link href="/contact" >
-                                <Button variant="contained" style={{backgroundColor:"#FB6520",color:"white !important",marginTop:20,}} component={"a"} >
+                                <Button variant="contained" className="assist-button" component={"a"} >
                                 Contact
                                 </Button>
                             </Link>
