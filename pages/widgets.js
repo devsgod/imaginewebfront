@@ -10,6 +10,7 @@ import Title from "../components/titlecomponent/titlecomponent"
 import Bar from "../components/Features/Bar"
 import Cards from "../components/Widget/newCard"
 import Ex from "../components/Features/exten"
+import CtaCard from '../components/Saas/CtaCard';
 
 import dash1 from "../images/widgets/1.png"
 import dash2 from "../images/widgets/2.png"
@@ -53,7 +54,7 @@ class Widgets extends Component {
                 <div className="container">           
             
                     <Ex
-                    header={"Refine your widgets to suit your style"}
+                    header={"Refine Your Widgets To Suit Your Style"}
                     title1={"Sizing of widgets"}
                     content1={"Choose from full screen, side bar or adjust to any size"}
                     title2={"Text sizing and attributes"}
@@ -71,7 +72,8 @@ class Widgets extends Component {
                     img5={dash5}
                     ></Ex>
                 </div>
-                <Cards></Cards>            
+                <Cards></Cards>    
+                <CtaCard />
                 <Footer />
             </React.Fragment>
         );

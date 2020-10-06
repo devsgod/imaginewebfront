@@ -26,6 +26,15 @@ class Overview extends Component {
                 <div className="container">
                     <div className="overview-box">
                         <div className="row h-100 justify-content-center align-items-center">
+
+                            <div className="col-lg-6 col-md-6 overview-img">
+                                {this.state.contentImg.map((item,index)=>(
+
+                                    <img key={index} src={item} alt="image"  style={{width:this.state.contentImgCur==index?"100%":0}}/>
+
+                                ))}                               
+                            </div>
+
                             <div className="col-lg-6 col-md-6 overview-content settitle">
                                 <h2>Content that will display perfectly on all screen sizes.</h2>
                                 <p style={{color:"black"}}>Select a custom resolution or aspect ratio in both portrait or landscape formats. Imagine software works flawlessly with every display from low-res, HD and 4k screens to 8k projectors and beyond.</p>
@@ -65,13 +74,7 @@ class Overview extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-6 col-md-6 overview-img">
-                                {this.state.contentImg.map((item,index)=>(
-
-                                    <img key={index} src={item} alt="image"  style={{width:this.state.contentImgCur==index?"100%":0}}/>
-
-                                ))}                               
-                            </div>
+                            
                         </div>
                     </div>
                 </div>

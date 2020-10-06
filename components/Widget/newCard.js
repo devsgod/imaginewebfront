@@ -43,9 +43,9 @@ class ServiceContent extends Component {
             <section className="services-area ptb-50">
                 <div className="container">
                     <div className="section-title">
-                        <h2>Free additional content widgets</h2>
+                        <h2 style={{fontSize:"35px !important"}}>Free additional content widgets</h2>
+                        <p> Battle tested features that continually improve</p>
                         <div className="bar"></div>
-                        <p> Feeds update as and when new data is available</p>
                     </div>
 
                     {/* <div className="woocommerce-topbar">

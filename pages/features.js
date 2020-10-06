@@ -26,9 +26,10 @@ class Features extends Component {
             <React.Fragment>
                 <Navbar />
                 <Banner />
-                <Bar title={"The Necessities To Your Success"}></Bar>
-                <Cards></Cards>
-                <Our
+                {/* <Bar title={"The Necessities To Your Success"}></Bar>
+                <Cards></Cards> */}
+                <Overview></Overview>
+                {/* <Our
                 title={"Getting to know the platform"}
                 pp={"Understanding how it all works and as well as the benefits it brings."}
                 header1={"Dashboard"}
@@ -37,10 +38,9 @@ class Features extends Component {
                 content2={"Installed onto the hardware and wirelessly linked to the dashboard. The Imagine player displays your content perfectly, restarts on a reboot and continues to play content with or without internet connection. Multiple OS versions available."}
                 img={ourimg1}
                 img2={ourimg2}
-                ></Our>
+                ></Our> */}
                 <All></All>
             
-                <Overview></Overview>
                  <Our
                     title={"Industry Specific Premium Features"}
                     p={"Constantly adjusting and improving for industry needs"}
@@ -57,7 +57,7 @@ class Features extends Component {
              </div>
                 <CtaCard />
                 {/* <Platform />              */}
-                <GalleryContent />               
+                {/* <GalleryContent />                */}
                 <Footer />
             </React.Fragment>
         );

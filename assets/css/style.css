@@ -220,7 +220,7 @@ button {
 }
 
 .section-title h2 {
-  font-size: 35px;
+  font-size: 35px !important;
   font-weight: 700;
   margin-bottom: 0;
   margin-top: 100px;
@@ -2132,7 +2132,7 @@ About CSS
 }
 
 .section-title h2 {
-  font-size: 35px;
+  font-size: 35px !important;
   font-weight: 700;
   margin-bottom: 0;
 }
@@ -2261,7 +2261,7 @@ padding-bottom: 50px;
   letter-spacing: 2px;
 }
 .section-title h2 {
-  font-size: 45px !important;
+  font-size: 45px;
   color: #fff !important;
   font-weight: 700 !important;
   margin-top: 14px !important;
