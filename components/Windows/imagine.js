@@ -34,8 +34,8 @@ const Dash = () => {
                     <Row style={{ marginTop: 22, paddingRight: 0, paddingLeft: 20, justifyContent: "center" }}>
                         <Col xs={5} style={{display:"flex", justifyContent: "start", alignItems: "center"}}>
                             <Link href="#">
-                                <Button variant="contained" style={{ backgroundColor: "white", color: "#FB6520", justifyContent: "start", textTransform: "none" }} size="large" component={"a"}>
-                                    Download Now</Button>
+                                <div variant="contained" className="btn btn-outline-primary primaryBtn" style={{justifyContent: "start"}} size="large" component={"a"}>
+                                    Download Now</div>
                             </Link>
                         </Col>
                         <Col xs={7}  >

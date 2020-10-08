@@ -9,7 +9,7 @@ import Logo3 from "../../images/secure and reliable.svg"
 export default function Card(){
 
     return(
-        <div className="container cardmb" >
+        <div className="container" style={{paddingBottom:70, paddingTop:25}}>
 
             <Grid className="card-grid" >
                 <Grid item={true} md={4} lg={4} sm={12} xs={12} className="flexcontainer cardhover flexcontainerrelative cardm borderhover card-overview">

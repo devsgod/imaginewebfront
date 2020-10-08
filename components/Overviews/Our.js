@@ -18,17 +18,17 @@ export default function Our(
         <div className="container">
             <Row>
                 <div className="section-title" >
-                    <h2 style={{ color: "black", marginBottom: 20 }}>{title}</h2>
-                    <p style={{ color: "black", margin: 20, marginBottom:0}}>{pp}</p>
-                    <div className="bar"></div>
+                    <h2 style={{marginBottom:0}}>{title}</h2>
+                    <p style={{ color: "#888", fontSize:25}}>{pp}</p>
+                    <div className="bar" style={{margin:"35px auto"}}></div>
                 </div>
                 <Row style={{marginBottom:50}}>
                     <Col lg={6} md={6} style={{ padding: 20, display:"grid" }} className="ourmb">
-                        <Col className={hover && "hoverorange"} onMouseOver={() => sethover(true)} style={{ padding:15}}>
+                        <Col className={hover && "hoverorange"} onMouseOver={() => sethover(true)} style={{ paddingTop:25}}>
                             <h1 style={{ fontWeight: 1000, fontSize: "1.5rem" }}>{header1}</h1>
                             <p style={{ color: "black", fontSize: 15 }}>{content1}</p>
                         </Col>
-                        <Col style={{  paddingTop:20}} className={!hover && "hoverorange"} onMouseOver={() => sethover(false)}> 
+                        <Col style={{  paddingTop:25}} className={!hover && "hoverorange"} onMouseOver={() => sethover(false)}> 
                             <b style={{ fontSize: "1.5rem" }}>{header2} </b>
                             <p style={{ color: "black", fontSize: 15}}>{content2}</p>
                         </Col>

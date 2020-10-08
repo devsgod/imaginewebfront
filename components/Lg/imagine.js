@@ -16,16 +16,16 @@ const Dash = () => {
 
 
     return (
-        <div style={{ marginBottom: 100 }} className="container">
+        <div className="container">
 
-            <Row >
+            <Row  >
                 <Col md={12} lg={4} style={{ justifyContent: "center", display: "flex" }}>
                     <img src={dash2} alt=""></img>
                 </Col>
                 <Col md={12} lg={8} style={{ justifyContent: "center", alignSelf: "center" }}>
                     <Row style={{ display: "flex", justifyContent: "center", alignItems: "center", }}>
                         <Col className="settitle" >
-                            <h2>Imagine a screen is all that your need!</h2>
+                            <h2 >Imagine a screen is all that your need!</h2>
                         </Col>
                     </Row>
                         <p style={{ paddingRight: 20, paddingLeft: 20, alignItems: "center",paddingTop:15 }}>The LG digital Signage displays are designed for lengthy period playbacks (24/7) and aimed at the retail, restaurant, and quick service sectors (QRS)</p>
@@ -34,8 +34,8 @@ const Dash = () => {
                     <Row style={{ marginTop: 22, paddingRight: 0, paddingLeft: 20, justifyContent: "center" }}>
                         <Col xs={5} style={{display:"flex", justifyContent: "start", alignItems: "center"}}>
                             <Link href="#">
-                                <Button variant="contained" style={{ backgroundColor: "#FB6520", color: "white", justifyContent: "start", textTransform: "none" }} size="large" component={"a"}>
-                                    Download Now</Button>
+                                <div variant="contained" className="btn btn-outline-primary primaryBtn" style={{justifyContent: "start"}} size="large" component={"a"}>
+                                    Download Now</div>
                             </Link>
                         </Col>
                         <Col xs={7}  >

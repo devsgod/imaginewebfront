@@ -18,7 +18,7 @@ export default function SimplePaper() {
         </div>
         <div className="buttonorta">
           <Link href="/contact">
-            <Button variant="contained" style={{backgroundColor:"#FB6520",color:"white",padding:"6px 50px", fontSize:20 ,textTransform:"none"}} size="large" component="a">Contact</Button>
+            <div variant="contained" className="btn btn-outline-primary primaryBtn" size="large" component="a">CONTACT</div>
           </Link>
         </div>
       {/* </Paper>      */}

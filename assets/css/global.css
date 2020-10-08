@@ -8,7 +8,7 @@
     margin-bottom: 15px;
 }
 .section-title span {
-    color: #e32879;
+    color: #000000;
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
@@ -199,7 +199,7 @@ color: #e32879;
     margin-bottom: 60px;
 }
 .section-title span {
-    color: #e32879;
+    color: #000000;
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
@@ -429,7 +429,7 @@ font-size: 1.5rem;
   
   @media screen and (min-width: 800px) {
     .response{
-        font-size: 2rem !important;
+        font-size: 3rem !important;
         padding-top: 40px;
         
     }
@@ -463,7 +463,7 @@ p{
 .hoverorange{
 background-color: #FB6520;
 color:white  !important;
-padding-top: 10px !important;
+/* padding-top: 10px !important; */
   
 
 
@@ -479,7 +479,7 @@ font-size: 1.5rem !important;
   @media screen and (min-width: 1950px) {
     .page-title-banner-feature{
         padding-top: 133px !important;
-        padding-bottom: 180px !important;
+        padding-bottom: 70px !important;
 
 
     }
@@ -487,7 +487,7 @@ font-size: 1.5rem !important;
   @media screen and (max-width: 1950px) and (min-width: 1600px){
     .page-title-banner-feature{
         padding-top: 100px !important;
-        padding-bottom: 179px !important;
+        padding-bottom: 70px !important;
 
 
     }
@@ -495,7 +495,7 @@ font-size: 1.5rem !important;
   @media screen and (max-width: 1600px) and (min-width: 1350px){
     .page-title-banner-feature{
         padding-top: 70px !important;
-        padding-bottom: 179px !important;
+        padding-bottom: 70px !important;
 
 
     }
@@ -507,7 +507,7 @@ font-size: 1.5rem !important;
   @media screen and (max-width: 1350px) and (min-width: 900px){
     .page-title-banner-feature{
         padding-top: 50px !important;
-        padding-bottom: 179px !important;
+        padding-bottom: 70px !important;
 
 
     }

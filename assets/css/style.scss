@@ -132,9 +132,9 @@ button {
 }
 
 
-/* btn btn-primary */
+/* btn1 btn1-primary */
 
-.btn-primary {
+.btn1-primary {
     color: $white_color;
     background-color: $template_color2;
     &:hover,
@@ -150,12 +150,12 @@ button {
     }
     &:not(:disabled):not(.disabled).active:focus,
     &:not(:disabled):not(.disabled):active:focus,
-    .show>.btn-primary.dropdown-toggle:focus {
+    .show>.btn1-primary.dropdown-toggle:focus {
         box-shadow: unset;
     }
     &:not(:disabled):not(.disabled).active,
     &:not(:disabled):not(.disabled):active,
-    .show>.btn-primary.dropdown-toggle {
+    .show>.btn1-primary.dropdown-toggle {
         color: $white_color;
         background: $template_color;
         transform: translateY(-5px);
@@ -173,11 +173,11 @@ button {
     }
 }
 
-.btn-rounded {
+.btn1-rounded {
     // border-radius: 30px !important;
 }
 
-.btn {
+.btn1 {
     font: {
         weight: 700;
         size: 15px;
@@ -221,7 +221,7 @@ button {
 
 .topbar {
     padding: 5px 0;
-    .btn {
+    .btn1 {
         padding: 5px 10px;
     }
 }
@@ -231,7 +231,7 @@ button {
 
 .section-title {
     text-align: center;
-    max-width: 720px;
+    // max-width: 720px;
     margin: {
         bottom: 50px;
         top: -6px;
@@ -240,13 +240,13 @@ button {
     }
     h2 {
         font: {
-            size: 35px;
+            size: 45px;
             weight: 700;
         }
-        margin-bottom: 0;
+        margin: 50px 0px
     }
     p {
-        max-width: 650px;
+        // max-width: 650px;
         margin: 0 auto;
     }
     .bar {
@@ -791,7 +791,7 @@ Navbar CSS
                 }
             }
         }
-        .btn {
+        .btn1 {
             position: absolute;
             right: 0;
             bottom: 0;
@@ -1060,7 +1060,7 @@ Main Banner CSS
                 bottom: 35px;
             }
         }
-        .btn {
+        .btn1 {
             &:hover {
                 &::after,
                 &::before {
@@ -1069,10 +1069,10 @@ Main Banner CSS
                 transform: translateY(0);
             }
         }
-        .btn-primary {
+        .btn1-primary {
             &:not(:disabled):not(.disabled).active,
             &:not(:disabled):not(.disabled):active,
-            .show>.btn-primary.dropdown-toggle {
+            .show>.btn1-primary.dropdown-toggle {
                 color: $template_color2;
                 background: $white_color;
             }
@@ -1082,7 +1082,7 @@ Main Banner CSS
                 color: $template_color2;
             }
         }
-        .video-btn {
+        .video-btn1 {
             margin-left: 15px;
             color: $white_color;
             text-transform: uppercase;
@@ -1119,7 +1119,7 @@ Main Banner CSS
                     color: $white_color;
                 }
             }
-            .btn {
+            .btn1 {
                 position: absolute;
                 right: 0;
                 top: 0;
@@ -1159,7 +1159,7 @@ Main Banner CSS
                     }
                 }
             }
-            .btn {
+            .btn1 {
                 display: block;
                 width: 100%;
             }
@@ -1394,7 +1394,7 @@ Main Banner CSS
             p {
                 color: $paragraph_color;
             }
-            .video-btn {
+            .video-btn1 {
                 color: #716c80;
                 &:hover,
                 &:focus {
@@ -1403,7 +1403,7 @@ Main Banner CSS
                     }
                 }
             }
-            .btn {
+            .btn1 {
                 &:hover {
                     &::after,
                     &::before {
@@ -1411,10 +1411,10 @@ Main Banner CSS
                     }
                 }
             }
-            .btn-primary {
+            .btn1-primary {
                 &:not(:disabled):not(.disabled).active,
                 &:not(:disabled):not(.disabled):active,
-                .show>.btn-primary.dropdown-toggle {
+                .show>.btn1-primary.dropdown-toggle {
                     background: $template_color;
                     color: $white_color;
                 }
@@ -2710,7 +2710,7 @@ CTA CSS
             weight: 700;
         }
     }
-    .btn {
+    .btn1 {
         &:hover {
             &::after,
             &::before {
@@ -2718,10 +2718,10 @@ CTA CSS
             }
         }
     }
-    .btn-primary {
+    .btn1-primary {
         &:not(:disabled):not(.disabled).active,
         &:not(:disabled):not(.disabled):active,
-        .show>.btn-primary.dropdown-toggle {
+        .show>.btn1-primary.dropdown-toggle {
             color: $template_color2;
             background: $white_color;
         }
@@ -3356,7 +3356,7 @@ Pricing CSS
         }
     }
     .price-footer {
-        .btn {
+        .btn1 {
             &:hover {
                 &::after,
                 &::before {
@@ -3364,10 +3364,10 @@ Pricing CSS
                 }
             }
         }
-        .btn-primary {
+        .btn1-primary {
             &:not(:disabled):not(.disabled).active,
             &:not(:disabled):not(.disabled):active,
-            .show>.btn-primary.dropdown-toggle {
+            .show>.btn1-primary.dropdown-toggle {
                 color: $template_color2;
                 background: $white_color;
             }
@@ -3749,7 +3749,7 @@ Get Started CSS
     text-align: center;
     border-radius: 3px;
     form {
-        .btn {
+        .btn1 {
             display: block;
             width: 100%;
             letter-spacing: 2px;
@@ -3929,7 +3929,7 @@ Screenshot CSS
             transform: scale(.8);
             transition: .4s;
         }
-        .popup-btn {
+        .popup-btn1 {
             position: absolute;
             left: 0;
             top: 50%;
@@ -3957,7 +3957,7 @@ Screenshot CSS
                 opacity: .8;
                 transform: scale(1);
             }
-            .popup-btn {
+            .popup-btn1 {
                 visibility: visible;
                 opacity: 1;
                 transform: scale(1);
@@ -4372,7 +4372,7 @@ App Download CSS
                 bottom: 35px;
             }
         }
-        .download-btn {
+        .download-btn1 {
             a {
                 position: relative;
                 padding: 12px 35px 12px 65px;
@@ -4580,7 +4580,7 @@ Blog CSS
         p {
             margin-bottom: 20px;
         }
-        .read-more-btn {
+        .read-more-btn1 {
             font-weight: 700;
         }
     }
@@ -4896,7 +4896,7 @@ Analysis CSS
         margin-bottom: 30px;
     }
     form {
-        .btn {
+        .btn1 {
             display: block;
             width: 100%;
             padding: 13px 40px;
@@ -5045,7 +5045,7 @@ Subscribe CSS
                 color: $paragraph_color;
             }
         }
-        .btn {
+        .btn1 {
             position: absolute;
             right: 0;
             top: 0;
@@ -5374,7 +5374,7 @@ Product CSS
             transform: scale(1);
             transition: all 300ms ease;
         }
-        .add-to-cart-btn {
+        .add-to-cart-btn1 {
             display: block;
             position: absolute;
             left: 0;
@@ -5440,7 +5440,7 @@ Product CSS
             img {
                 transform: scale(1.09);
             }
-            .add-to-cart-btn {
+            .add-to-cart-btn1 {
                 bottom: 0;
             }
         }
@@ -5561,7 +5561,7 @@ Product Details CSS
                 display: inline-block;
                 width: 120px;
             }
-            .btn {
+            .btn1 {
                 display: inline-block;
                 position: relative;
                 top: -1px;
@@ -6081,7 +6081,7 @@ Login CSS
                 }
             }
         }
-        .btn {
+        .btn1 {
             margin: {
                 bottom: 20px;
                 top: 10px;
@@ -6123,7 +6123,7 @@ Signup CSS
                 top: -2px;
             }
         }
-        .btn {
+        .btn1 {
             margin: {
                 bottom: 20px;
                 top: 20px;
@@ -6217,7 +6217,7 @@ FAQ CSS
         margin-bottom: 25px;
     }
     form {
-        .btn {
+        .btn1 {
             margin-top: 15px;
         }
     }
@@ -6705,12 +6705,12 @@ Checkout CSS
             }
         }
     }
-    .btn {
-        &.order-btn {
+    .btn1 {
+        &.order-btn1 {
             display: block;
             margin-top: 25px;
             width: 100%;
-            &.btn-disabled {
+            &.btn1-disabled {
                 background-color: #717070;
                 border-color: #717070;
                 cursor: not-allowed;
@@ -6788,7 +6788,7 @@ Contact Us CSS
             }
         }
     }
-    .btn {
+    .btn1 {
         margin-top: 10px;
     }
     #msgSubmit {
@@ -6817,14 +6817,14 @@ Footer CSS
             }
         }
         p {
-            margin-bottom: 0;
+            margin: 20px 0px;
         }
         ul {
             padding: 0;
             margin: 0;
             list-style-type: none;
             &.social-list {
-                margin-top: 20px;
+                // margin-top: 20px;
                 li {
                     display: inline-block;
                     margin-right: 10px;
@@ -6995,10 +6995,10 @@ Back To Top CSS
         height: 100%;
         line-height: 50px;
         transition: $transition;
-        &.minus-btn {
+        &.minus-btn1 {
             left: 0;
         }
-        &.plus-btn {
+        &.plus-btn1 {
             right: 0;
         }
         &:hover {
@@ -7043,4 +7043,37 @@ Back To Top CSS
     text-align: center;
     color: black;
     font-size: 18px;
+}
+
+.primaryBtn{
+    padding: 6px 80px;
+    font-size: 18px;
+    border-width: 2.5px;
+    border-color: #fb6520;
+}
+
+.nav-signup{
+    border-width: 2.5px;
+    border-color: #fb6520;
+}
+
+.nav-signup-link{
+    border-width: 2.5px;
+    border-color: #fb6520;
+}
+
+@media only screen and (max-width:768px){
+    .footer-menu{
+        display: contents;
+    }
+}
+.footer-bottom{
+    display: flex;
+    justify-content: flex-end;
+}
+@media only screen and (max-width:768px){
+    .footer-bottom{
+        display: flex;
+        justify-content: flex-end;
+    }
 }

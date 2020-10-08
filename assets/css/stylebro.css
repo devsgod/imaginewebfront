@@ -125,48 +125,48 @@ button {
   outline: 0 !important;
 }
 
-/* btn btn-primary */
-.btn-primary {
+/* btn1 btn1-primary */
+.btn1-primary {
   color: #ffffff;
   background-color: #FB6520;
 }
 
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+.btn1-primary:hover, .btn1-primary:focus, .btn1-primary:active {
   color: #ffffff;
   background: #FB6520/*#13c4a1*/;
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
 }
 
-.btn-primary.focus, .btn-primary:focus {
+.btn1-primary.focus, .btn1-primary:focus {
   -webkit-box-shadow: unset;
           box-shadow: unset;
 }
 
-.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary .show > .btn-primary.dropdown-toggle:focus {
+.btn1-primary:not(:disabled):not(.disabled).active:focus, .btn1-primary:not(:disabled):not(.disabled):active:focus, .btn1-primary .show > .btn1-primary.dropdown-toggle:focus {
   -webkit-box-shadow: unset;
           box-shadow: unset;
 }
 
-.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .btn-primary .show > .btn-primary.dropdown-toggle {
+.btn1-primary:not(:disabled):not(.disabled).active, .btn1-primary:not(:disabled):not(.disabled):active, .btn1-primary .show > .btn1-primary.dropdown-toggle {
   color: #ffffff;
   background: #FB6520/*#13c4a1*/;
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
 }
 
-.btn-primary.disabled, .btn-primary:disabled {
+.btn1-primary.disabled, .btn1-primary:disabled {
   color: #ffffff;
   background-color: #FB6520;
   border-color: #FB6520;
   opacity: 1;
 }
 
-.btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary:disabled:hover, .btn-primary:disabled:focus {
+.btn1-primary.disabled:hover, .btn1-primary.disabled:focus, .btn1-primary:disabled:hover, .btn1-primary:disabled:focus {
   background: #FB6520/*#13c4a1*/;
 }
 
-.btn {
+.btn1 {
   font-weight: 700;
   font-size: 15px;
   border: none;
@@ -181,7 +181,7 @@ button {
   transition: .9s;
 }
 
-.btn::after, .btn::before {
+.btn1::after, .btn1::before {
   content: '';
   position: absolute;
   top: 0;
@@ -194,22 +194,22 @@ button {
   border-radius: 5px;
 }
 
-.btn::after {
+.btn1::after {
   left: 0;
 }
 
-.btn::before {
+.btn1::before {
   right: 0;
 }
 
-.btn:hover::after, .btn:hover::before {
+.btn1:hover::after, .btn1:hover::before {
   width: 50%;
 }
 
 /* section title */
 .section-title {
   text-align: center;
-  max-width: 720px;
+  /* max-width: 720px; */
   margin-bottom: 50px;
   margin-top: -6px;
   margin-left: auto;
@@ -223,7 +223,7 @@ button {
 }
 
 .section-title p {
-  max-width: 650px;
+  /* max-width: 650px; */
   margin: 0 auto;
 }
 
@@ -864,7 +864,7 @@ Navbar CSS
   border-color: #FB6520;
 }
 
-.header-search .header-search-form .btn {
+.header-search .header-search-form .btn1 {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -873,7 +873,7 @@ Navbar CSS
   border-radius: 0;
 }
 
-.header-search .header-search-form .btn:hover {
+.header-search .header-search-form .btn1:hover {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
@@ -1147,26 +1147,26 @@ Main Banner CSS
   margin-bottom: 35px;
 }
 
-.main-banner .hero-content .btn:hover {
+.main-banner .hero-content .btn1:hover {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
 
-.main-banner .hero-content .btn:hover::after, .main-banner .hero-content .btn:hover::before {
+.main-banner .hero-content .btn1:hover::after, .main-banner .hero-content .btn1:hover::before {
   background: #ffffff;
 }
 
-.main-banner .hero-content .btn-primary:not(:disabled):not(.disabled).active, .main-banner .hero-content .btn-primary:not(:disabled):not(.disabled):active, .main-banner .hero-content .btn-primary .show > .btn-primary.dropdown-toggle {
+.main-banner .hero-content .btn1-primary:not(:disabled):not(.disabled).active, .main-banner .hero-content .btn1-primary:not(:disabled):not(.disabled):active, .main-banner .hero-content .btn1-primary .show > .btn1-primary.dropdown-toggle {
   color: #FB6520;
   background: #ffffff;
 }
 
-.main-banner .hero-content .btn-primary:hover, .main-banner .hero-content .btn-primary:focus {
+.main-banner .hero-content .btn1-primary:hover, .main-banner .hero-content .btn1-primary:focus {
   background: #ffffff;
   color: #FB6520;
 }
 
-.main-banner .hero-content .video-btn {
+.main-banner .hero-content .video-btn1 {
   margin-left: 15px;
   color: grey/*#ffffff*/;
   text-transform: uppercase;
@@ -1174,7 +1174,7 @@ Main Banner CSS
   font-weight: 700;
 }
 
-.main-banner .hero-content .video-btn i {
+.main-banner .hero-content .video-btn1 i {
   font-size: 30px;
   position: relative;
   margin-left: 10px;
@@ -1183,7 +1183,7 @@ Main Banner CSS
   transition: .4s;
 }
 
-.main-banner .hero-content .video-btn:hover i {
+.main-banner .hero-content .video-btn1:hover i {
   color: #FB6520;
 }
 
@@ -1220,7 +1220,7 @@ Main Banner CSS
   color: #ffffff;
 }
 
-.main-banner .hero-content form .btn {
+.main-banner .hero-content form .btn1 {
   position: absolute;
   right: 0;
   top: 0;
@@ -1262,7 +1262,7 @@ Main Banner CSS
   font-size: 17px;
 }
 
-.main-banner .signup-download form .btn {
+.main-banner .signup-download form .btn1 {
   display: block;
   width: 100%;
 }
@@ -1547,24 +1547,24 @@ Main Banner CSS
   color: #818992;
 }
 
-.main-banner.marketing-home .hero-content .video-btn {
+.main-banner.marketing-home .hero-content .video-btn1 {
   color: #716c80;
 }
 
-.main-banner.marketing-home .hero-content .video-btn:hover i, .main-banner.marketing-home .hero-content .video-btn:focus i {
+.main-banner.marketing-home .hero-content .video-btn1:hover i, .main-banner.marketing-home .hero-content .video-btn1:focus i {
   color: #FB6520/*#13c4a1*/;
 }
 
-.main-banner.marketing-home .hero-content .btn:hover::after, .main-banner.marketing-home .hero-content .btn:hover::before {
+.main-banner.marketing-home .hero-content .btn1:hover::after, .main-banner.marketing-home .hero-content .btn1:hover::before {
   background: #FB6520/*#13c4a1*/;
 }
 
-.main-banner.marketing-home .hero-content .btn-primary:not(:disabled):not(.disabled).active, .main-banner.marketing-home .hero-content .btn-primary:not(:disabled):not(.disabled):active, .main-banner.marketing-home .hero-content .btn-primary .show > .btn-primary.dropdown-toggle {
+.main-banner.marketing-home .hero-content .btn1-primary:not(:disabled):not(.disabled).active, .main-banner.marketing-home .hero-content .btn1-primary:not(:disabled):not(.disabled):active, .main-banner.marketing-home .hero-content .btn1-primary .show > .btn1-primary.dropdown-toggle {
   background: #FB6520/*#13c4a1*/;
   color: #ffffff;
 }
 
-.main-banner.marketing-home .hero-content .btn-primary:hover, .main-banner.marketing-home .hero-content .btn-primary:focus {
+.main-banner.marketing-home .hero-content .btn1-primary:hover, .main-banner.marketing-home .hero-content .btn1-primary:focus {
   background: #FB6520/*#13c4a1*/;
   color: #ffffff;
 }
@@ -2766,16 +2766,16 @@ CTA CSS
   font-weight: 700;
 }
 
-.cta-area .btn:hover::after, .cta-area .btn:hover::before {
+.cta-area .btn1:hover::after, .cta-area .btn1:hover::before {
   background: #ffffff;
 }
 
-.cta-area .btn-primary:not(:disabled):not(.disabled).active, .cta-area .btn-primary:not(:disabled):not(.disabled):active, .cta-area .btn-primary .show > .btn-primary.dropdown-toggle {
+.cta-area .btn1-primary:not(:disabled):not(.disabled).active, .cta-area .btn1-primary:not(:disabled):not(.disabled):active, .cta-area .btn1-primary .show > .btn1-primary.dropdown-toggle {
   color: #FB6520;
   background: #ffffff;
 }
 
-.cta-area .btn-primary:hover, .cta-area .btn-primary:focus {
+.cta-area .btn1-primary:hover, .cta-area .btn1-primary:focus {
   background: #ffffff;
   color: #FB6520;
 }
@@ -3149,16 +3149,16 @@ Pricing CSS
   margin-bottom: 0;
 }
 
-.pricing-table .price-footer .btn:hover::after, .pricing-table .price-footer .btn:hover::before {
+.pricing-table .price-footer .btn1:hover::after, .pricing-table .price-footer .btn1:hover::before {
   background: #ffffff;
 }
 
-.pricing-table .price-footer .btn-primary:not(:disabled):not(.disabled).active, .pricing-table .price-footer .btn-primary:not(:disabled):not(.disabled):active, .pricing-table .price-footer .btn-primary .show > .btn-primary.dropdown-toggle {
+.pricing-table .price-footer .btn1-primary:not(:disabled):not(.disabled).active, .pricing-table .price-footer .btn1-primary:not(:disabled):not(.disabled):active, .pricing-table .price-footer .btn1-primary .show > .btn1-primary.dropdown-toggle {
   color: #FB6520;
   background: #ffffff;
 }
 
-.pricing-table .price-footer .btn-primary:hover, .pricing-table .price-footer .btn-primary:focus {
+.pricing-table .price-footer .btn1-primary:hover, .pricing-table .price-footer .btn1-primary:focus {
   background: #ffffff;
   color: #FB6520;
 }
@@ -3558,7 +3558,7 @@ Get Started CSS
   border-radius: 3px;
 }
 
-.get-started-form form .btn {
+.get-started-form form .btn1 {
   display: block;
   width: 100%;
   letter-spacing: 2px;
@@ -3659,7 +3659,7 @@ Screenshot CSS
   transition: .4s;
 }
 
-.page-from-book .screenshot-item .popup-btn {
+.page-from-book .screenshot-item .popup-btn1 {
   position: absolute;
   left: 0;
   top: 50%;
@@ -3677,7 +3677,7 @@ Screenshot CSS
           transform: scale(0);
 }
 
-.page-from-book .screenshot-item .popup-btn:hover {
+.page-from-book .screenshot-item .popup-btn1:hover {
   color: #FB6520/*#13c4a1*/;
 }
 
@@ -3694,7 +3694,7 @@ Screenshot CSS
           transform: scale(1);
 }
 
-.page-from-book .screenshot-item:hover .popup-btn {
+.page-from-book .screenshot-item:hover .popup-btn1 {
   visibility: visible;
   opacity: 1;
   -webkit-transform: scale(1);
@@ -4339,7 +4339,7 @@ Blog CSS
   margin-bottom: 20px;
 }
 
-.single-blog-post .blog-post-content .read-more-btn {
+.single-blog-post .blog-post-content .read-more-btn1 {
   font-weight: 700;
 }
 
@@ -4648,7 +4648,7 @@ Analysis CSS
   margin-bottom: 30px;
 }
 
-.analysis-form form .btn {
+.analysis-form form .btn1 {
   display: block;
   width: 100%;
   padding: 13px 40px;
@@ -4811,14 +4811,14 @@ Subscribe CSS
   color: #818992;
 }
 
-.subscribe-area .newsletter-form .btn {
+.subscribe-area .newsletter-form .btn1 {
   position: absolute;
   right: 0;
   top: 0;
   height: 100%;
 }
 
-.subscribe-area .newsletter-form .btn:hover, .subscribe-area .newsletter-form .btn:focus {
+.subscribe-area .newsletter-form .btn1:hover, .subscribe-area .newsletter-form .btn1:focus {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
@@ -5240,7 +5240,7 @@ Product CSS
   transition: all 300ms ease;
 }
 
-.single-product .product-img .add-to-cart-btn {
+.single-product .product-img .add-to-cart-btn1 {
   display: block;
   position: absolute;
   left: 0;
@@ -5259,7 +5259,7 @@ Product CSS
   transition: .4s;
 }
 
-.single-product .product-img .add-to-cart-btn i {
+.single-product .product-img .add-to-cart-btn1 i {
   font-size: 20px;
   float: right;
 }
@@ -5339,7 +5339,7 @@ Product CSS
           transform: scale(1.09);
 }
 
-.single-product:hover .product-img .add-to-cart-btn {
+.single-product:hover .product-img .add-to-cart-btn1 {
   bottom: 0;
 }
 
@@ -5459,7 +5459,7 @@ Product Details CSS
   width: 120px;
 }
 
-.shop-details .product-entry-summary form .btn {
+.shop-details .product-entry-summary form .btn1 {
   display: inline-block;
   position: relative;
   top: -1px;
@@ -6001,7 +6001,7 @@ Login CSS
   color: #FB6520/*#13c4a1*/;
 }
 
-.login-form form .btn {
+.login-form form .btn1 {
   margin-bottom: 20px;
   margin-top: 10px;
 }
@@ -6042,7 +6042,7 @@ Signup CSS
   top: -2px;
 }
 
-.signup-form form .btn {
+.signup-form form .btn1 {
   margin-bottom: 20px;
   margin-top: 20px;
 }
@@ -6140,7 +6140,7 @@ FAQ CSS
   margin-bottom: 25px;
 }
 
-.faq-contact form .btn {
+.faq-contact form .btn1 {
   margin-top: 15px;
 }
 
@@ -6611,19 +6611,19 @@ Checkout CSS
           transform: scale(1);
 }
 
-.order-details .btn.order-btn {
+.order-details .btn1.order-btn1 {
   display: block;
   margin-top: 25px;
   width: 100%;
 }
 
-.order-details .btn.order-btn.btn-disabled {
+.order-details .btn1.order-btn1.btn1-disabled {
   background-color: #717070;
   border-color: #717070;
   cursor: not-allowed;
 }
 
-.order-details .btn.order-btn.btn-disabled:hover {
+.order-details .btn1.order-btn1.btn1-disabled:hover {
   background-color: transparent;
   border-color: #000000;
 }
@@ -6699,7 +6699,7 @@ Contact Us CSS
   color: red;
 }
 
-#contactForm .btn {
+#contactForm .btn1 {
   margin-top: 10px;
 }
 
@@ -6736,7 +6736,7 @@ Footer CSS
 }
 
 .footer-area .single-footer-widget ul.social-list {
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 
 .footer-area .single-footer-widget ul.social-list li {
@@ -6917,11 +6917,11 @@ Back To Top CSS
   transition: 0.5s;
 }
 
-.input-counter span.minus-btn {
+.input-counter span.minus-btn1 {
   left: 0;
 }
 
-.input-counter span.plus-btn {
+.input-counter span.plus-btn1 {
   right: 0;
 }
 
@@ -6976,7 +6976,7 @@ Back To Top CSS
   padding: 5px 0;
 }
 
-.topbar .btn {
+.topbar .btn1 {
   padding: 5px 10px;
 }
 
@@ -6988,7 +6988,7 @@ Back To Top CSS
   font-size: 14px;
 }
 
-.topbar .sign-btn {
+.topbar .sign-btn1 {
   box-shadow: none;
 }
 

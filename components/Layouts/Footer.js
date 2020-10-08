@@ -1,13 +1,23 @@
 import Link from 'next/link';
+import img_window from '../../images/footer/windows_ftr.png'
+import img_linux from '../../images/footer/linux_ftr.png'
+import img_lg from '../../images/footer/lgwbos_ftr.png'
+import img_android from '../../images/footer/android_ftr.png'
+import img_paypal from '../../images/footer/paypal _ftr.png'
+import img_visa from '../../images/footer/visa _ftr.png'
+import img_facebook from '../../images/footer/facebook _Ftr.png'
+import img_instagram from '../../images/footer/insta _Ftr.png'
+import img_linkedin from '../../images/footer/linked in _Ftr.png'
+import img_youtube from '../../images/footer/youtube _Ftr.png'
 
 class Footer extends React.Component {
     render() {
         return (
             <footer className="footer-area ptb-100 pb-0 bg-image">
                 <div className="container">
-                    <div className="row">
+                    <div className="row footer-menu" style={{justifyContent:"center"}}>
 
-                    <div className="col-lg-1 col-md-6 mr-5">
+                        <div className="mr-5">
                             <div className="single-footer-widget">
                                 <h3>Industries</h3>
 
@@ -56,7 +66,7 @@ class Footer extends React.Component {
                             </div>
                         </div>            
 
-                        <div className="col-lg-1 col-md-6 mr-5">
+                        <div className="mr-5">
                             <div className="single-footer-widget">
                                 <h3>Sofware</h3>
                                 <ul className="list">
@@ -84,7 +94,7 @@ class Footer extends React.Component {
                             </div>
                         </div>
 
-                        <div className="col-lg-1 col-md-6 mr-5">
+                        <div className="mr-5">
                             <div className="single-footer-widget">
                                 <h3>Platform</h3>
                                 <ul className="list">
@@ -112,7 +122,7 @@ class Footer extends React.Component {
                             </div>
                         </div>
 
-                        <div className="col-lg-1 col-md-6 mr-5">
+                        <div className="mr-5">
                             <div className="single-footer-widget">
                                 <h3>Company</h3>
                                 <ul className="list">
@@ -140,7 +150,7 @@ class Footer extends React.Component {
                             </div>
                         </div>
                         
-                        <div className="col-lg-1 col-md-6 mr-5">
+                        <div className="mr-5">
                             <div className="single-footer-widget">
                                 <h3>Support</h3>
 
@@ -169,53 +179,43 @@ class Footer extends React.Component {
                             </div>
                         </div>
 
-                        <div className="col-lg-4 col-md-6">
+                        <div >
                             <div className="single-footer-widget mr-5">                                
                                 {/* <p>Drag, drop and schedule content across multiple displays with the ability to scale infinitely. Monitor the status of every display in a single view format or filter to manage each individually from our web-based management  interface.</p> */}
 
                                 <ul className="social-list">
-                                    <p style={{color:"orange", fontWeight:600}}>Download the Imagine Player</p>
+                                    <p style={{color:"orange", fontWeight:600, marginTop:0}}>Download the Imagine Player</p>
                                     <li>
-                                        <Link href="https://www.facebook.com/imaginedigitalsignage">
-                                            <a><i className="icofont-facebook"></i></a>
+                                        <Link href="#">
+                                            <a><img src={img_window}></img></a>
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="https://www.youtube.com/channel/UCGlcTeybhh35gMdAcHPOdiQ/featured?view_as=subscriber">
-                                            <a><i className="icofont-youtube"></i></a>
+                                        <Link href="#">
+                                            <a><img src={img_linux}></img></a>
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="https://www.instagram.com/explore/locations/831795206873516/imagine-digital-signage/?hl=en">
-                                            <a><i className="icofont-instagram"></i></a>
+                                        <Link href="#">
+                                            <a><img src={img_lg}></img></a>
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="https://www.linkedin.com/company/imagine-digital-signage/?viewAsMember=true">
-                                            <a><i className="icofont-linkedin"></i></a>
+                                        <Link href="#">
+                                            <a><img src={img_android}></img></a>
                                         </Link>
                                     </li>
                                 </ul>
                                 <ul className="social-list">
                                     <p style={{color:"orange", fontWeight:600}}>Secure Payments</p>
                                     <li>
-                                        <Link href="https://www.facebook.com/imaginedigitalsignage">
-                                            <a><i className="icofont-facebook"></i></a>
+                                        <Link href="#">
+                                            <a><img src={img_visa}></img></a>
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="https://www.youtube.com/channel/UCGlcTeybhh35gMdAcHPOdiQ/featured?view_as=subscriber">
-                                            <a><i className="icofont-youtube"></i></a>
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="https://www.instagram.com/explore/locations/831795206873516/imagine-digital-signage/?hl=en">
-                                            <a><i className="icofont-instagram"></i></a>
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="https://www.linkedin.com/company/imagine-digital-signage/?viewAsMember=true">
-                                            <a><i className="icofont-linkedin"></i></a>
+                                        <Link href="#">
+                                            <a><img src={img_paypal}></img></a>
                                         </Link>
                                     </li>
                                 </ul>
@@ -223,22 +223,22 @@ class Footer extends React.Component {
                                     <p style={{color:"orange", fontWeight:600}}>Let's Get Social</p>
                                     <li>
                                         <Link href="https://www.facebook.com/imaginedigitalsignage">
-                                            <a><i className="icofont-facebook"></i></a>
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="https://www.youtube.com/channel/UCGlcTeybhh35gMdAcHPOdiQ/featured?view_as=subscriber">
-                                            <a><i className="icofont-youtube"></i></a>
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="https://www.instagram.com/explore/locations/831795206873516/imagine-digital-signage/?hl=en">
-                                            <a><i className="icofont-instagram"></i></a>
+                                            <a><img src={img_facebook}></img></a>
                                         </Link>
                                     </li>
                                     <li>
                                         <Link href="https://www.linkedin.com/company/imagine-digital-signage/?viewAsMember=true">
-                                            <a><i className="icofont-linkedin"></i></a>
+                                            <a><img src={img_linkedin}></img></a>
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="https://www.instagram.com/explore/locations/831795206873516/imagine-digital-signage/?hl=en">
+                                            <a><img src={img_instagram}></img></a>
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="https://www.youtube.com/channel/UCGlcTeybhh35gMdAcHPOdiQ/featured?view_as=subscriber">
+                                            <a><img src={img_youtube}></img></a>
                                         </Link>
                                     </li>
                                 </ul>
@@ -258,20 +258,20 @@ class Footer extends React.Component {
                                     </a>
                                 </Link>
                             </div>
-                            <div className="col-lg-8 col-md-6" style={{display:"flex", justifyContent: "flex-end"}}>
-                                <ul>
-                                    <li>
+                            <div className="col-lg-8 col-md-6 footer-bottom">
+                                <div style={{display:"flex"}}>
+                                    <div>
                                         <Link href="#">
-                                            <a>Terms & Conditions</a>
+                                            <a style={{color:"#818992"}}>Terms & Conditions &nbsp;</a>
                                         </Link>
-                                    </li>
-                                    <li>
+                                    </div>                                    
+                                    <div>
                                         <Link href="#">
-                                            <a>Privacy Policy</a>
+                                            <a style={{color:"#818992"}}>Privacy Policy &nbsp;&nbsp;</a>
                                         </Link>
-                                    </li>
-                                </ul>
-                                <p style={{marginLeft:30}}>Copyright @ {new Date().getFullYear()} imAGINE. All rights reserved</p>
+                                    </div>
+                                </div>
+                                <div style={{color:"#818992"}}>Copyright @ {new Date().getFullYear()} imAGINE. All rights reserved</div>                                        
                             </div>
                         </div>
                     </div>

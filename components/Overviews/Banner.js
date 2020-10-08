@@ -6,7 +6,7 @@ import Link from 'next/link';
 class Banner extends Component {
     render() {
         return (
-            <section className="page-title-banner-feature banner-responsive" style={{backgroundImage:`url(${background})`,marginBottom:50}}>
+            <section className="page-title-banner-feature banner-responsive" style={{backgroundImage:`url(${background})`}}>
                 <div className="container">
                     <Col >
                         <p className="banner-text-sec">OVERVIEW</p>

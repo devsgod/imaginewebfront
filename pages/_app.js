@@ -1,4 +1,5 @@
-import '../assets/css/bootstrap.min.css';
+// import '../assets/css/bootstrap.min.css';
+import '../assets/css/bootstrap.css';
 import '../assets/css/visibility.min.css';
 import '../assets/css/icofont.min.css';
 import '../assets/css/animate.min.css';

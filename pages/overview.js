@@ -21,9 +21,14 @@ class Overviews extends Component {
             <React.Fragment>
                 <Navbar />
                 <Banner />
-                <Bar title={"The Necessities To Your Success"}></Bar>
-                <Cards></Cards>
+                <div className="features-area">
+                    <div className="iceborg-content">
+                        <Bar title={"The Necessities To Your Success"}></Bar>
+                        <Cards></Cards>
+                    </div>
+                </div>
                 <Benifits></Benifits>
+                <hr></hr>
                 <Our
                 title={"Getting to know the platform"}
                 pp={"Understanding how it all works and as well as the benefits it brings."}

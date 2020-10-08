@@ -60,13 +60,12 @@ class CtaCard extends React.Component {
 
                         <div className="col-lg-12 col-md-12 mt-3 cta-card-input">
                             <div className=" col-lg-4 col-md-4">
-                                <input type="email" id="email" name="email" className="form-control" placeholder="Email" onChange={this.onChange} />
+                                <input type="email" id="email" name="email" className="form-control" placeholder="Your Email Address" onChange={this.onChange} />
                             </div>
 
                             <div className="col-lg-3 col-md-3">
                                 <Link href="#">
-                                    {/* <a className="btn btn-primary">Take a Test Drive</a> */}
-                                    <a className="btn btn-primary cta-card-button" onClick={e => this.onSubmit(e)}>Take a Test Drive</a>
+                                    <div className="btn btn-outline-light cta-card-button" onClick={e => this.onSubmit(e)}>TAKE A TEST DRIVE</div>
                                 </Link>
                             </div>
                         </div>

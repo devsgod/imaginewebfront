@@ -190,12 +190,7 @@ class Navbar extends React.Component {
                                                     <Link activeClassName="active" href="/linux">
                                                         <a className="nav-link"><div className="icon text-center"><i className="icofont-penguin-linux"></i></div> Linux</a>
                                                     </Link>
-                                                </li>
-                                                <li className="nav-item">
-                                                    <Link activeClassName="active" href="/comparrison">
-                                                        <a className="nav-link"><div className="icon text-center"><i className="icofont-cubes"></i></div>Comparrison</a>
-                                                    </Link>                                            
-                                                </li>                                                                                          
+                                                </li>                                                                                   
                                             </ul>
                                         </li>                                    
                                         
@@ -316,8 +311,8 @@ class Navbar extends React.Component {
                                         </li>
                                     </ul>
                                 </div>
-                                <div className="btn btn-primary mr-auto others-option">
-                                    <Link href="/signup"><a className="nav-signup">Sign Up</a></Link>                                    
+                                <div className="btn btn-outline-primary mr-auto others-option">
+                                    <Link href="/signup"><div className="nav-signup">Sign Up</div></Link>                                    
                                 </div>
                             </nav>
                         </div> 
