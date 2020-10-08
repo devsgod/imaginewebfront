@@ -48,7 +48,7 @@ render(){
 
     return (
         <div>
-             <div className="app-features-content features-area">
+             <div className="app-features-content features-area iceborg-content">
                     <div className="container">
                         <div className="row mb-5">
                             {

@@ -39,7 +39,9 @@ class Features extends Component {
                 img={ourimg1}
                 img2={ourimg2}
                 ></Our> */}
-                <All></All>
+                <div className="features-area">
+                    <All></All>
+                </div>
             
                  <Our
                     title={"Industry Specific Premium Features"}
@@ -51,10 +53,10 @@ class Features extends Component {
                     img={ourimg3}
                     img2={ourimg4}
                  ></Our>
-             <div className="features-area">
-             <Htext></Htext>
-             <Multi from={0} to={4} button={true}></Multi>
-             </div>
+                <div className="features-area">
+                    <Htext></Htext>
+                    <Multi from={0} to={4} button={true}></Multi>
+                </div>
                 <CtaCard />
                 {/* <Platform />              */}
                 {/* <GalleryContent />                */}

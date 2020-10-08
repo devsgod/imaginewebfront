@@ -56,9 +56,9 @@ export default function SimpleExpansionPanel(
     }
 
   return (
-    <Row className="mt40 mb100">
-      <div className="exhead settitle ">
-        <h2 className="exheadh2" style={{}} >{header}</h2>
+    <Row>
+      <div className="exhead settitle feature-monitor-header">
+        <h2 className="exheadh2" >{header}</h2>
         <div className="section-title">        
           <div className="bar"></div>
         </div>

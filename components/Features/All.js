@@ -4,7 +4,7 @@ import { FaChrome } from "react-icons/fa"
 import { FaApple } from "react-icons/fa"
 import { FaWindows } from "react-icons/fa"
 import dog from "../../images/ex1.png"
-import all2 from "../../images/our/file.png"
+import all2 from "../../images/features/Feature graphics psd.png"
 import dash2 from "../../images/ex2.png"
 import dash3 from "../../images/ex3.png"
 import dash4 from "../../images/ex4.png"
@@ -45,8 +45,8 @@ export default function All() {
     }, [])
 
     return (
-    <div>
-        <div className="container">
+    <div className="iceborg-content">
+        <div className="container ">
             
             <Ex
             header={"Monitor and manage all your screens and users"}
@@ -68,18 +68,18 @@ export default function All() {
             ></Ex>
         </div>
 
-        <Row className="features-area flexcontainer" style={{backgroundColor:"white",flexWrap:"nowrap",marginBottom:50, marginLeft:0, marginRight:0}}>
+        <Row className="features-area flexcontainer" style={{flexWrap:"nowrap",marginBottom:50, marginLeft:0, marginRight:0}}>
             <Multi from={0} to={1} button={false}></Multi>
         </Row>
 
-        <div className="container">
-            <Row className="directionrows" style={{flexWrap:"nowrap", padding:30 }}>
-                <Col md={12} lg={6} >
-                    <div  className="settitle" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-                        <h2>Manage your content library and folders</h2>
+        <div className="container-feature-monitor" style={{backgroundColor:"white"}} >
+            <Row className="directionrows feature-directionrow">
+                <Col md={12} lg={6} className="feature-lib-text">
+                    <div  className="settitle feature-lib-text-header">
+                        <h2 style={{fontSize:41, textAlign:"left"}}>Manage your content library and folders</h2>
                     </div>
-                    <p style={{ paddingRight: 20, paddingLeft: 20, alignItems: "center", color:"black" }}>Manage your content easily with folders, sort and search tools. Imagine caters for all popular media formats with smooth playback transitions</p>
-                        <Row style={{ justifyContent: "center", flexDirection: "column",flexWrap:"nowrap" }}>
+                    <p className="feature-lib-text-contect">Manage your content easily with folders, sort and search tools. Imagine caters for all popular media formats with smooth playback transitions</p>
+                        <Row className="feature-lib-text-selector" style={{ justifyContent: "center", flexDirection: "column",flexWrap:"nowrap" }}>
                             <Row style={{ marginTop: 10, justifyContent: "center",flexWrap:"nowrap" }}>
                                 <Col xs={5}style={{justifyContent:"start",display:"flex",alignItems:"center"}}>
                                     <FaCheck style={{ alignItems: "center",  }}></FaCheck>
@@ -126,10 +126,14 @@ export default function All() {
                         </Row>
                     </Col>
 
-                    <Col md={12} lg={4} style={{display:"flex",alignItems:"center",}} >
+                    <Col md={12} lg={4} style={{display:"flex",alignItems:"center",}} className="feature-lib-img" >
                         <img key="all2" src={all2} alt=""></img>
                     </Col>
                 </Row>
+                
+            </div>
+
+            <div className="container">
                 <Ex
                     header={"Create your content layout in seconds"}
                     title1={"            Design"}
@@ -147,7 +151,7 @@ export default function All() {
                 ></Ex>
             </div>
 
-            <Row className="features-area flexcontainer" style={{backgroundColor:"white",  marginLeft:0, marginRight:0}}>
+            <Row className="features-area flexcontainer" style={{marginLeft:0, marginRight:0}}>
                 <Multi from={4} to={2} button={false}></Multi>
             </Row>
         </div>
