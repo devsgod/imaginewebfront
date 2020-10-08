@@ -57,11 +57,11 @@ export default function SimpleExpansionPanel(
 
   return (
     <Row>
-      <div className="exhead settitle feature-monitor-header">
-        <h2 className="exheadh2" >{header}</h2>
-        <div className="section-title">        
-          <div className="bar"></div>
-        </div>
+      <div className="exhead settitle section-title feature-monitor-header">
+        <h2 className="exheadh2" style={{paddingTop:0}}>{header}</h2>
+              
+          <div style={{marginTop:40, marginBottom:0}} className="bar"></div>
+        
       </div>
       
       <Col md={12} lg={6} className="excol1">

@@ -5,7 +5,7 @@ export default function titlecomponent({p,title,titlesmall}) {
         <div className="container">
             <div className="section-title" >
 
-                <h2 style={{ color: "black", marginBottom: 0 ,marginTop:30}}>{title}
+                <h2 style={{ color: "black", marginBottom: 0 ,marginTop:30, fontSize:40}}>{title}
                 </h2>
                 <p >   {p}
                 </p>

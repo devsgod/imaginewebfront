@@ -18,7 +18,7 @@ export default function Our(
         <div className="container">
             <Row>
                 <div className="section-title" >
-                    <h2 style={{ color: "black", marginBottom: 20 }}>{title}</h2>
+                    <h2 style={{ color: "black", marginBottom: 20, fontSize:36 }}>{title}</h2>
                     <p style={{ color: "black", margin: 20, marginBottom:0}}>{pp}</p>
                     <div className="bar"></div>
                 </div>
@@ -41,9 +41,9 @@ export default function Our(
                         <Col>
                             <img key="img1" src={img2} alt="" style={{width:"100%"}}></img>
                         </Col>
-                        <Col onMouseOver={() => sethover(true)} style={{ padding:15}}>
-                            <h1 style={{ fontWeight: 1000, fontSize: "1.5rem" }}>{header1}</h1>
-                            <p style={{ color: "black", fontSize: 15 }}>{content1}</p>
+                        <Col style={{  paddingTop:20}} onMouseOver={() => sethover(false)}> 
+                            <b style={{ fontSize: "1.5rem" }}>{header1} </b>
+                            <p style={{ color: "black", fontSize: 15}}>{content1}</p>
                         </Col>
                     </Col>
                     <Col lg={6} md={6}>

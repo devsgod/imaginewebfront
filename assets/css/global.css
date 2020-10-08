@@ -343,13 +343,13 @@ font-size: 1.5rem;
   align-items: start;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 50px;
 }
 .exheadh2{
   text-align: center !important;
     padding-right: 20px;
     padding-left: 20px;
     font-size: 2rem;
+    margin-top: 50px;
 }
 
 
@@ -967,7 +967,8 @@ color:white !important;
 .widgets-header-img{
   margin-bottom: 80px;
   padding:20px;
-  width:55%;
+  width:60%;
+  text-align: center;
 }
 
 @media only screen and (max-width:767px){
@@ -975,6 +976,7 @@ color:white !important;
     margin-bottom: 80px;
     padding:20px;
     width:80%;
+    text-align: center;
   }
 }
 

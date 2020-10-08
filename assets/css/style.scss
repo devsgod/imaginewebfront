@@ -240,7 +240,7 @@ button {
     }
     h2 {
         font: {
-            size: 45px;
+            size: 38px !important;
             weight: 700;
         }
         margin: 50px 0px
@@ -7124,19 +7124,19 @@ Back To Top CSS
 
 .feature-lib-text-contect{
     padding-right: 20px;
-    padding-left: 20px;
     align-items: center;
     color: black;
+    padding-left: 40px;
 }
 
 .feature-lib-text-selector{
     justify-content: center;
     flex-flow: column nowrap;
-    margin: 24px 0px;
+    margin: 24px -24px;
 }
 
 .feature-lib-img{
-    max-width: 420px;
+    max-width: 560px;
 }
 
 .feature-monitor-header{
@@ -7155,4 +7155,21 @@ Back To Top CSS
         }
     }
     
+}
+
+.overview-text-header{
+    h2{
+        text-align: left !important;
+        padding:0px !important;
+        font-weight: 600;
+        font-size: 38px !important;
+    }
+    p{
+        text-align: left;
+        margin: 40px 0px;
+    }
+}
+
+.widgets-main-img{
+    // width: 10%;
 }

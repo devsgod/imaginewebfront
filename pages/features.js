@@ -44,16 +44,16 @@ class Features extends Component {
                 </div>
             
                  <Our
-                    title={"Industry Specific Premium Features"}
+                    title={"Digital Signage that helps you achieve your business goals"}
                     p={"Constantly adjusting and improving for industry needs"}
                     header1={"Wireless Caller"}
                     header2={"Overlay Pop Up"}
-                    content1={" Centrally controlled and monitored from the management interface. Our wireless button and receiver enables an instant message to display over any existing content. Ideal for a queue management and activations. Example: Button 1: “Next customer, Teller 1”"}
+                    content1={"Centrally controlled and monitored from the management interface. Our wireless button and receiver enables an instant message to display over any existing content. Ideal for a queue management and activations. Example: Button 1: “Next customer, Teller 1”"}
                     content2={"Take complete control and add an overlay (image or video), which be scheduled to pop up directly over any existing playing content (Live TV, adverts, widgets, etc..). Select from multiple placement areas for added control (Top bar, full screen, L Shape, etc..). "}
                     img={ourimg3}
                     img2={ourimg4}
                  ></Our>
-                <div className="features-area">
+                <div className="features-area" style={{backgroundColor:"#f8fafb"}}>
                     <Htext></Htext>
                     <Multi from={0} to={4} button={true}></Multi>
                 </div>

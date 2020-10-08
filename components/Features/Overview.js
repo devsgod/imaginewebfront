@@ -22,7 +22,7 @@ class Overview extends Component {
 
     render() {
         return (
-            <section className="overview-section ptb-100 bg-gray" style={{marginBottom:50}}>
+            <section className="overview-section ptb-100 bg-gray">
                 <div className="container">
                     <div className="overview-box">
                         <div className="row h-100 justify-content-center align-items-center">
@@ -35,7 +35,7 @@ class Overview extends Component {
                                 ))}                               
                             </div>
 
-                            <div className="col-lg-6 col-md-6 overview-content settitle">
+                            <div className="col-lg-6 col-md-6 overview-content settitle overview-text-header">
                                 <h2>Content that will display perfectly on all screen sizes.</h2>
                                 <p style={{color:"black"}}>Select a custom resolution or aspect ratio in both portrait or landscape formats. Imagine software works flawlessly with every display from low-res, HD and 4k screens to 8k projectors and beyond.</p>
 

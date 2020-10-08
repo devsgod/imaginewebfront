@@ -45,7 +45,7 @@ export default function All() {
     }, [])
 
     return (
-    <div className="iceborg-content">
+    <div style={{backgroundColor:"#f8fafb"}}>
         <div className="container ">
             
             <Ex
@@ -76,10 +76,10 @@ export default function All() {
             <Row className="directionrows feature-directionrow">
                 <Col md={12} lg={6} className="feature-lib-text">
                     <div  className="settitle feature-lib-text-header">
-                        <h2 style={{fontSize:41, textAlign:"left"}}>Manage your content library and folders</h2>
+                        <h2>Manage your content library and folders</h2>
                     </div>
                     <p className="feature-lib-text-contect">Manage your content easily with folders, sort and search tools. Imagine caters for all popular media formats with smooth playback transitions</p>
-                        <Row className="feature-lib-text-selector" style={{ justifyContent: "center", flexDirection: "column",flexWrap:"nowrap" }}>
+                        <Row className="feature-lib-text-selector" >
                             <Row style={{ marginTop: 10, justifyContent: "center",flexWrap:"nowrap" }}>
                                 <Col xs={5}style={{justifyContent:"start",display:"flex",alignItems:"center"}}>
                                     <FaCheck style={{ alignItems: "center",  }}></FaCheck>
@@ -135,8 +135,8 @@ export default function All() {
 
             <div className="container">
                 <Ex
-                    header={"Create your content layout in seconds"}
-                    title1={"            Design"}
+                    header={"Monitor and manage all your screens and users"}
+                    title1={"Design"}
                     content1={"Select a template or create your own screen layout, adding regions where content will be placed"}
                     title2={"Upload & refine"}
                     content2={"Upload content into your library and drag and drop into the creation regions (see all formats accepted)"}
